@@ -1,0 +1,186 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px; }
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden; }
+
+img {
+  max-width: 100%; }
+
+@media (max-width: 420px) {
+  .navbar-default .header-buttons .active, .navbar-default .header-buttons .active:hover, .navbar-default .header-buttons .default, .navbar-default .header-buttons .default:hover {
+    margin: 0 15px 10px !important; } }
+
+.header .navbar-default {
+  background: #ebebeb !important;
+  border-bottom: #d0d0d0 !important; }
+  .header .navbar-default .navbar-header, .header .navbar-default .img-logo {
+    font-family: "Open Sans", sans-serif !important; }
+
+.navbar-default .navbar-header, .navbar-default .img-logo {
+  font-family: Verdana, "Open Sans", sans-serif !important; }
+
+.navbar-default .header-buttons {
+  position: relative;
+  margin-top: 12px; }
+  .navbar-default .header-buttons li {
+    padding-left: 6px; }
+  .navbar-default .header-buttons .active, .navbar-default .header-buttons .default, .navbar-default .header-buttons .default:hover {
+    font-size: 16px;
+    color: #2fcde7;
+    padding: 6px 20px;
+    border: 1px solid #2fcde7;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase; }
+  .navbar-default .header-buttons .default, .navbar-default .header-buttons .active:hover {
+    background: #2fcde7;
+    color: #fff;
+    border: 1px solid #2fcde7; }
+
+.main-content {
+  margin-bottom: 80px; }
+  .main-content .content-title {
+    margin: 10px auto;
+    text-align: center;
+    color: #383838;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 17px; }
+    .main-content .content-title p:nth-child(1) {
+      line-height: 24px;
+      padding-bottom: 10px; }
+    .main-content .content-title p:nth-child(2), .main-content .content-title p:nth-child(3) {
+      line-height: 12px; }
+      .main-content .content-title p:nth-child(2) a, .main-content .content-title p:nth-child(2) a:link, .main-content .content-title p:nth-child(2) a:visited, .main-content .content-title p:nth-child(3) a, .main-content .content-title p:nth-child(3) a:link, .main-content .content-title p:nth-child(3) a:visited {
+        color: #222222;
+        text-decoration: underline; }
+      .main-content .content-title p:nth-child(2) a:hover, .main-content .content-title p:nth-child(3) a:hover {
+        color: #5e5e5e;
+        text-decoration: none; }
+    .main-content .content-title .title-header {
+      font-size: 24px; }
+  .main-content .content-form {
+    width: 70%; }
+    .main-content .content-form .form-login {
+      margin-top: 20px; }
+      .main-content .content-form .form-login .form-label {
+        font-size: 28px;
+        color: #2fcde7;
+        margin: 10px 0; }
+        .main-content .content-form .form-login .form-label span {
+          color: rgba(255, 0, 0, 0.64); }
+      .main-content .content-form .form-login .form-inputs input {
+        width: 75%;
+        border-radius: 3px;
+        padding: 12px 10px;
+        border: 1px solid #cccccc; }
+        .main-content .content-form .form-login .form-inputs input::placeholder {
+          color: #a4a4a4; }
+      .main-content .content-form .form-login .form-label:nth-child(3) {
+        margin-top: 35px; }
+      .main-content .content-form .form-login .captcha {
+        width: 45%; }
+      .main-content .content-form .form-login .form-label-desc {
+        margin: 5px 0 25px;
+        font-size: 14px;
+        color: #a4a4a4; }
+      .main-content .content-form .form-login .form-label-desc {
+        width: 75%;
+        margin-top: 15px;
+        line-height: 12px; }
+        .main-content .content-form .form-login .form-label-desc .hint-text {
+          padding-left: 10px; }
+        .main-content .content-form .form-login .form-label-desc span {
+          display: inline-block; }
+        .main-content .content-form .form-login .form-label-desc .forgot-pass a, .main-content .content-form .form-login .form-label-desc .forgot-pass a:active, .main-content .content-form .form-login .form-label-desc .forgot-pass a:link, .main-content .content-form .form-login .form-label-desc .forgot-pass a:visited {
+          color: #2fcde7;
+          text-decoration: none; }
+        .main-content .content-form .form-login .form-label-desc .forgot-pass a:hover {
+          text-decoration: underline; }
+      .main-content .content-form .form-login .form-buttons {
+        padding-top: 20px; }
+        .main-content .content-form .form-login .form-buttons .cancel {
+          color: #222222;
+          background: #fff;
+          font-size: 16px;
+          font-family: "Open Sans";
+          font-weight: 600;
+          padding: 6px 35px;
+          border: 1px solid #222222;
+          border-radius: 3px;
+          text-decoration: none;
+          text-transform: capitalize;
+          margin-right: 15px; }
+        .main-content .content-form .form-login .form-buttons .cancel:hover {
+          background: #484848;
+          color: #fff;
+          border: 1px solid #484848;
+          text-decoration: none; }
+        .main-content .content-form .form-login .form-buttons .signin {
+          color: #fff;
+          background: #2fcde7;
+          padding: 6px 35px;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
+          border: 1px solid #2fcde7;
+          border-radius: 3px;
+          text-decoration: none;
+          text-transform: capitalize; }
+        .main-content .content-form .form-login .form-buttons .signin:hover {
+          background: #fff;
+          color: #2fcde7;
+          border: 1px solid #2fcde7;
+          text-decoration: none; }
+
+.footer {
+  background: #f3f3f3;
+  padding: 25px 0;
+  text-align: center;
+  text-transform: uppercase; }
+  .footer .foot-banner-sm {
+    margin: 10px auto; }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
+      display: inline-block; }
+      .footer ul li a, .footer ul li a:active, .footer ul li a:link, .footer ul li a:visited {
+        font-size: 16px;
+        color: #5e5e5e;
+        padding: 5px 10px;
+        text-decoration: none; }
+      .footer ul li a:hover {
+        color: #222222;
+        text-decoration: none; }
+  .footer .foot-copyrights {
+    color: #878787; }
+  .footer .foot-banner-sm {
+    padding: 10px; }
+  .footer .chat-modal {
+    position: absolute;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
+    background: #6FBD64;
+    right: 0;
+    bottom: -130%;
+    cursor: pointer;
+    z-index: 10; }
+    .footer .chat-modal span {
+      position: absolute;
+      top: -15%;
+      right: -5%;
+      background: rgba(255, 0, 0, 0.64);
+      color: #fff;
+      border: 2px solid #fff;
+      z-index: 99; }

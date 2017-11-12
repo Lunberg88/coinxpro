@@ -1,0 +1,33 @@
+@import "mixin";
+
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 420px) {
+  .navbar-default {
+    .header-buttons {
+      .active, .active:hover, .default, .default:hover {
+        margin: 0 15px 10px !important;
+      }
+    }
+  }
+}
+
+@import "vars";
+@import "signin";
