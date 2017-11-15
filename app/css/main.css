@@ -609,3 +609,39 @@ img {
     display: none; }
   .my-acc-resetpass .tab-content .allifiate-submenu .active {
     display: block; }
+  .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container {
+    position: relative;
+    display: block;
+    background: #f1f1f1;
+    width: auto;
+    margin: 15px auto;
+    padding: 25px 0;
+    color: #3b3b3b; }
+    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container span {
+      font-size: 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 500;
+      padding: 4px; }
+    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container p {
+      font-size: 15px; }
+    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container .submenu-generator {
+      margin: 30px auto 5px; }
+      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container .submenu-generator input {
+        width: 40%;
+        background: #fff;
+        padding: 7px 15px;
+        border: 1px solid #e7e7e7;
+        border-radius: 3px; }
+      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container .submenu-generator a {
+        font-size: 16px;
+        padding: 5px 20px;
+        border-radius: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        background: #2fcde7;
+        color: #fff;
+        border: 1px solid #2fcde7; }
+      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container .submenu-generator a:hover {
+        text-decoration: none;
+        background: #fff;
+        color: #00b3ee; }
