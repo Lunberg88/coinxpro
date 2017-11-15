@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign Up</title>
+    <title>Error 404</title>
     <!-- build:css css/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -33,10 +33,28 @@
                 <img src="assets/img/logo__.png" height="60" class="img-logo" alt="COIN X PRO">
             </div>
             <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-menu">
+                    <ul class="nav navbar-nav navbar-left menu-main">
+                        <li><a href="#markets"><img src="assets/img/img-market.svg"> markets</a></li>
+                        <li><a href="#news"><img src="assets/img/img-list.svg"> news</a></li>
+                        <li><a href="#dice"><img src="assets/img/img-bone.svg"> dice</a></li>
+                    </ul>
+                </div>
                 <div class="signin-buttons">
-                    <ul class="nav navbar-nav navbar-right header-buttons">
-                        <li><a href="signin.html" class="active">sign in</a></li>
-                        <li><a href="signup.html" class="default">register</a></li>
+                    <ul class="nav navbar-nav navbar-right acc-links">
+                        <li class="my-acc"><a href="#myaccount">my account<span class="badge">3</span></a></li>
+                        <li class="dropdown">
+                            <a href="#lang-us" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img
+                                    src="assets/img/lang-us.png" width="30" alt="U.S. Language"> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#lang-ru">Ru</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <form action="#" method="POST" name="logout-form">
+                                <a href="#logout"><img src="assets/img/logout-btn.svg" width="45" alt="Logout"></a>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </div><!--/.nav-collapse -->
@@ -45,69 +63,20 @@
 </header>
 <main>
     <div class="wrapper">
-        <section class="main-content">
+        <section class="error-page">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <div class="content-title">
-                            <p><span class="title-header">Create account</span></p>
-                            <p>This will be your only ID on CoinxPro which is necessary for your exchange,</p>
-                            <p>deposit and withdrawal, please fill it out carefully. <a href="signin.html">Sign In</a>. </p>
+                    <div class="404-page">
+                        <div class="error-title">
+                            <p>Page not found</p>
+                            <p>Error 404</p>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-12 pull-left">
-                        <div class="content-form">
-                            <form class="form-login" action="#" method="POST">
-                                <div class="form-label">
-                                    Username <span>*</span>
-                                </div>
-                                <div class="form-inputs">
-                                    <input type="text" placeholder="Your name">
-                                </div>
-                                <div class="form-label">
-                                    Email <span>*</span>
-                                </div>
-                                <div class="form-inputs">
-                                    <input type="email" placeholder="example@mail.com">
-                                </div>
-                                <div class="form-label">
-                                   New password <span>*</span>
-                                </div>
-                                <div class="form-inputs">
-                                    <input type="password" placeholder="Please set your login password">
-                                </div>
-                                <div class="form-label-desc">
-                                    <span class="hint-text">
-                                        <p>Set a password which has at least 6 characters and it's better to</p>
-                                        <p>contain uppercase and lowercase letters and numbers.</p>
-                                    </span>
-                                    <span class="forgot-pass pull-right">
-                                        <a href="#">Forgot Password?</a>
-                                    </span>
-                                </div>
-                                <div class="form-label">
-                                    Confirm new password <span>*</span>
-                                </div>
-                                <div class="form-inputs">
-                                    <input type="password" placeholder="Confirm your password">
-                                </div>
-                                <div class="form-label">
-                                    Captcha <span>*</span>
-                                </div>
-                                <div class="form-inputs captcha">
-                                    <input type="text" placeholder="">
-                                </div>
-                                <div class="form-label-desc">
-                                    <span class="hint-text">
-                                        Refresh page to get new captcha.
-                                    </span>
-                                </div>
-                                <div class="form-buttons">
-                                    <a href="#" class="cancel">cancel</a> <a href="#" class="signin">sign in</a>
-                                </div>
-                            </form>
+                        <div class="error-img">
+                            <img src="assets/img/error-page-404-logo.png" align="center" alt="Error 404">
+                        </div>
+                        <div class="error-msg">
+                            <p>The page you are trying to access does not exist. This might be because you have entered the ad-</p>
+                            <p>dress correctly. For help please contact customer support or go to the <a href="#">CoinxPro.com homepage.</a></p>
                         </div>
                     </div>
                 </div>

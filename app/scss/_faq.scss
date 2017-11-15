@@ -1,0 +1,63 @@
+.faq-content {
+  margin: auto auto 40px;
+
+  .p-desc-title {
+    padding: 15px 0;
+    text-align: center;
+
+    span {
+      font-family: "Open Sans";
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+
+  .main-box {
+    width: 85%;
+    padding: 20px 20px;
+
+    .p-title {
+      font-size: 28px;
+      color: #00b3ee;
+      font-family: "Open Sans";
+      font-weight: 400;
+      padding: 5px 0 15px;
+    }
+
+    .p-text {
+      font-size: 15px;
+      color: #3b3b3b;
+      padding: 5px 0;
+
+      a, a:visited {
+        color: #00b3ee;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #3b3b3b;
+        text-decoration: underline;
+      }
+    }
+
+    .center-text {
+      line-height: 15px;
+
+      span {
+        color: #00c700;
+      }
+    }
+
+    .p-first {
+      margin: 10px 0;
+    }
+
+    .p-second {
+      margin: 50px 0;
+    }
+
+    .p-third {
+      margin: 20px 0 40px;
+    }
+  }
+}
