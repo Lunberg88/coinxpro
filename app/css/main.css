@@ -563,3 +563,49 @@ img {
       font-size: 25px;
       padding: 4px 20px;
       font-weight: 200 !important; }
+  .tfa .rp-banner {
+    height: 600px !important;
+    text-align: center; }
+    .tfa .rp-banner span {
+      font-size: 52px !important;
+      line-height: 600px !important; }
+
+.my-acc-resetpass .tab-content .acc-submenu {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #e9e9e9; }
+  .my-acc-resetpass .tab-content .acc-submenu li {
+    width: 33%;
+    float: left; }
+    .my-acc-resetpass .tab-content .acc-submenu li .active {
+      border: 2px solid #00b3ee; }
+
+.my-acc-resetpass .tab-content .allifiate-submenu {
+  padding: 15px 0; }
+  .my-acc-resetpass .tab-content .allifiate-submenu ul {
+    list-style: none;
+    border-bottom: 2px solid #e7e7e7;
+    padding: 4px 100px; }
+    .my-acc-resetpass .tab-content .allifiate-submenu ul li {
+      display: inline-block;
+      width: 33%; }
+      .my-acc-resetpass .tab-content .allifiate-submenu ul li a {
+        color: #3b3b3b !important;
+        text-decoration: none !important;
+        padding: 5px 40px;
+        outline: none !important; }
+      .my-acc-resetpass .tab-content .allifiate-submenu ul li a:hover, .my-acc-resetpass .tab-content .allifiate-submenu ul li .ui-tabs-active {
+        color: #00b3ee !important;
+        text-decoration: none;
+        border-bottom: 2px solid #00b3ee !important; }
+    .my-acc-resetpass .tab-content .allifiate-submenu ul .ui-state-active a {
+      color: #00b3ee !important;
+      border-bottom: 2px solid #00b3ee !important; }
+    .my-acc-resetpass .tab-content .allifiate-submenu ul li:focus {
+      border: 0 !important;
+      background: transparent !important;
+      outline: none !important; }
+  .my-acc-resetpass .tab-content .allifiate-submenu div {
+    display: none; }
+  .my-acc-resetpass .tab-content .allifiate-submenu .active {
+    display: block; }
