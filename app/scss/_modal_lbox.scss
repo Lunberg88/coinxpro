@@ -1,0 +1,60 @@
+.modal .fade .in {
+    background-color: rgba(0, 0, 0, 0.71) !important;
+  }
+
+
+.modal-dialog {
+  width: 80%;
+  top: 15%;
+
+  .modal-content {
+    width: 100%;
+    padding: 30px 50px;
+    text-align: center;
+
+    .modal-title-sec {
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 500;
+      color: #3b3b3b;
+      margin: 0 auto 45px;
+    }
+
+    .modal-sec_title {
+      font-size: 32px;
+      font-family: "Open Sans", sans-serif;
+      padding: 10px 0;
+      color: #3b3b3b;
+      font-weight: 500;
+    }
+
+    .modal-sec_text {
+      margin: 20px auto 50px;
+      color: #3b3b3b;
+      line-height: 10px;
+      text-align: center;
+    }
+
+    .modal-footer {
+      border: 0;
+      text-align: center;
+
+      a, a:visited {
+        background: #00b3ee;
+        color: #fff;
+        padding: 10px 30px;
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        border-radius: 3px;
+      }
+
+      a:hover {
+        background: #fff;
+        color: #00b3ee;
+        border: 1px solid #00b3ee;
+      }
+    }
+  }
+
+}

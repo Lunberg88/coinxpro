@@ -1,0 +1,26 @@
+.tfa-dis {
+  width: 75% !important;
+  .rp-info_icon {
+    display: inline-block;
+    font-size: 22px;
+    font-stretch: ultra-expanded;
+    vertical-align: top;
+  }
+  .rp-info_text {
+    display: inline-block;
+    padding-left: 15px;
+    line-height: 12px;
+    .top_text {
+        color: #c5c5c5;
+        line-height: 12px;
+      p:first-child {
+        color: #3b3b3b;
+        font-weight: 500;
+      }
+    }
+    .bot_text {
+      padding-top: 10px;
+    }
+  }
+
+}

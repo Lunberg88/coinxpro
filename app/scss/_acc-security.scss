@@ -1,0 +1,123 @@
+.acc-security {
+
+  .acc-error-msg {
+    margin: -5px auto 40px;
+    width: 100%;
+    background: rgba(214, 40, 36, 0.69);
+    border-radius: 3px;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .acc-error-info {
+    border: 1px solid rgba(214, 40, 36, 0.69);
+    padding: 20px 50px;
+    border-radius: 2px;
+
+    .acc-error_img {
+      text-align: center;
+      margin: 15px auto 0;
+    }
+
+    .acc-error_text {
+      font-size: 36px;
+      color: rgba(214, 40, 36, 0.69);
+      padding: 5px 10px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .acc-error_info {
+      text-align: center;
+      font-size: 15px;
+      padding: 5px;
+      color: #3b3b3b;
+
+      p:last-child {
+        line-height: 55px;
+      }
+
+      span {
+        font-size: 22px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        padding: 10px 5px;
+
+        a {
+          color: #00b3ee;
+        }
+
+        a:hover {
+          color: #262626;
+        }
+      }
+    }
+  }
+
+  .acc-error-checkboxes {
+    margin: 40px auto 45px;
+    text-align: center;
+
+    .list-style {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding: 5px 45px;
+
+        input[type=checkbox] {
+          display: none;
+        }
+        input[type=checkbox]:checked + label:before {
+          content: '\f14a';
+          color: #00b3ee;
+          font-size: 32px;
+        }
+        label {
+          padding-left: 2.1875rem;
+          position: relative;
+          color: #3b3b3b;
+          font-weight: normal;
+          text-decoration: none;
+        }
+        label:before {
+          position: absolute;
+          font-family: FontAwesome;
+          content: '\f096';
+          //font-size: 1rem;
+          font-size: 32px;
+          top: .625rem;
+          color: #acacac;
+          left: .3125rem;
+        }
+        label a {
+          color: #2f313e;
+          font-family: "Open Sans",sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 2.625rem;
+          text-decoration: underline;
+        }
+        label a:hover {
+          text-decoration: none;
+          color: #1a1a1a;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+      }
+
+      li:nth-child(1), li:nth-child(3) {
+        padding: 25px 0 0 0;
+        vertical-align: top;
+      }
+    }
+  }
+}
