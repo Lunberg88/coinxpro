@@ -4,6 +4,11 @@
   .menu-main {
     margin-top: 6px !important;
 
+    .active {
+      color: #00b3ee !important;
+      text-decoration: none !important;
+    }
+
     a, a:active, a:link, a:visited {
       padding: 15px 10px !important;
       color: #262626;
@@ -12,31 +17,8 @@
       font-weight: 600;
       text-transform: uppercase;
       text-decoration: none;
-
-      span:nth-child(1) {
-        content: " ";
-        display: inline-block;
-        background: url('../assets/img/img-market.svg') no-repeat;
-        width: 24px;
-        height: 20px;
-      }
-
-      span:nth-child(2) {
-        content: " ";
-        display: inline-block;
-        background: url('../assets/img/img-list.svg') no-repeat;
-        width: 24px;
-        height: 20px;
-      }
-
-      span:nth-child(3) {
-        content: " ";
-        display: inline-block;
-        background: url('../assets/img/img-bone.svg') no-repeat;
-        width: 24px;
-        height: 20px;
-      }
     }
+
 
     a:hover {
       color: #00b3ee !important;

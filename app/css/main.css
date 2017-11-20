@@ -20,7 +20,7 @@ img {
 
 .header .navbar-default {
   background: #ebebeb !important;
-  border-bottom: #d0d0d0 !important; }
+  border-bottom: 1px solid #d0d0d0 !important; }
   .header .navbar-default .navbar-header, .header .navbar-default .img-logo {
     font-family: "Open Sans", sans-serif !important; }
 
@@ -192,6 +192,9 @@ img {
   margin: auto 10px; }
   .left-nav-menu .menu-main {
     margin-top: 6px !important; }
+    .left-nav-menu .menu-main .active {
+      color: #00b3ee !important;
+      text-decoration: none !important; }
     .left-nav-menu .menu-main a, .left-nav-menu .menu-main a:active, .left-nav-menu .menu-main a:link, .left-nav-menu .menu-main a:visited {
       padding: 15px 10px !important;
       color: #262626;
@@ -200,24 +203,6 @@ img {
       font-weight: 600;
       text-transform: uppercase;
       text-decoration: none; }
-      .left-nav-menu .menu-main a span:nth-child(1), .left-nav-menu .menu-main a:active span:nth-child(1), .left-nav-menu .menu-main a:link span:nth-child(1), .left-nav-menu .menu-main a:visited span:nth-child(1) {
-        content: " ";
-        display: inline-block;
-        background: url("../assets/img/img-market.svg") no-repeat;
-        width: 24px;
-        height: 20px; }
-      .left-nav-menu .menu-main a span:nth-child(2), .left-nav-menu .menu-main a:active span:nth-child(2), .left-nav-menu .menu-main a:link span:nth-child(2), .left-nav-menu .menu-main a:visited span:nth-child(2) {
-        content: " ";
-        display: inline-block;
-        background: url("../assets/img/img-list.svg") no-repeat;
-        width: 24px;
-        height: 20px; }
-      .left-nav-menu .menu-main a span:nth-child(3), .left-nav-menu .menu-main a:active span:nth-child(3), .left-nav-menu .menu-main a:link span:nth-child(3), .left-nav-menu .menu-main a:visited span:nth-child(3) {
-        content: " ";
-        display: inline-block;
-        background: url("../assets/img/img-bone.svg") no-repeat;
-        width: 24px;
-        height: 20px; }
     .left-nav-menu .menu-main a:hover {
       color: #00b3ee !important;
       text-decoration: none; }
@@ -715,3 +700,62 @@ img {
         display: none; }
       .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .sub-tab div.active, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .sub-tab #daily.active > div, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .sub-tab #daily.active > div > div {
         display: block !important; }
+
+.news-content {
+  margin: auto auto 40px; }
+  .news-content .p-desc-title {
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 300; }
+    .news-content .p-desc-title span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 22px;
+      font-weight: 500; }
+  .news-content .main-news-box {
+    margin: auto auto 30px;
+    border: 1px solid #d5d5d5;
+    padding: 20px 10px;
+    height: 850px;
+    overflow-y: scroll;
+    resize: none;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px; }
+  .news-content ::-webkit-scrollbar {
+    width: 12px;
+    padding: 0 4px; }
+  .news-content ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+  .news-content ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: rgba(191, 191, 191, 0.8); }
+  .news-content ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(72, 72, 72, 0.4); }
+  .news-content p span {
+    font-size: 28px;
+    color: #262626;
+    padding: 5px 0 15px;
+    font-weight: 400; }
+  .news-content .date-box {
+    color: #a4a4a4;
+    font-size: 14px;
+    padding: 10px 0 5px; }
+  .news-content .news-content-right {
+    padding: 0 20px 0 20px; }
+    .news-content .news-content-right .news-search-box form input {
+      padding: 15px 5px 25px;
+      text-align: center;
+      color: #f7f7f7;
+      border-radius: 2px; }
+    .news-content .news-content-right .select-form-curr {
+      margin-top: 35px;
+      font-family: "Open Sans", sans-serif; }
+      .news-content .news-content-right .select-form-curr .form-group label {
+        padding-left: 15px;
+        font-size: 16px;
+        color: #5e5e5e; }
+      .news-content .news-content-right .select-form-curr .form-group select {
+        height: 50px;
+        color: #929292; }
