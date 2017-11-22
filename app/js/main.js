@@ -1,4 +1,20 @@
 $(function() {
+
+    $( "#tabs" ).tabs();
+
+    var sb = $('#sub-tabs a');
+    sb.click(function(e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
+    $('#tabvanilla > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
+    $('#featuredvid > ul').tabs();
+
+    $('#tabvanilla-1 > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
+    $('#featuredvid-1 > ul').tabs();
+
+
     var imh = $('a[href="#markets"]');
     imh.hover(function() {
         $('img[src="assets/img/img-market.svg"]').attr('src', 'assets/img/img-markets-on.svg');
@@ -27,13 +43,7 @@ $(function() {
         $(this).tab('show')
     });
 
-    $("#myModal").modal('show');
 
-    var sb = $('#sub-tabs a');
-    sb.click(function(e) {
-        e.preventDefault();
-        $(this).tab('show');
-    });
 
     var gen = $('#re-generate');
     var field = $('.form-control');
@@ -48,11 +58,6 @@ $(function() {
         field.attr('placeholder', token());
     });
 
-    $( "#tabs" ).tabs();
 
-    var sb = $('#sub-tabs a');
-    sb.click(function(e) {
-        e.preventDefault();
-        $(this).tab('show');
-    });
+
 });

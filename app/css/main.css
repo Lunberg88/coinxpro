@@ -452,41 +452,289 @@ img {
     background: #d50000;
     border-color: #fff;
     border-radius: 50%; }
-  .my-acc-resetpass .tab-content {
-    padding: 20px 0;
-    font-family: 'Open Sans', sans-serif; }
-    .my-acc-resetpass .tab-content .tab-pane .title-text {
-      font-size: 22px;
-      font-weight: 400; }
-    .my-acc-resetpass .tab-content .tab-pane .rp-left-col .rp-left_title {
-      width: 70%;
-      text-align: left;
-      padding: 20px 0 25px;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 500;
-      color: #3b3b3b;
-      border-bottom: 1px solid #dedede; }
-    .my-acc-resetpass .tab-content .tab-pane .rp-left-col .content-form {
-      width: 70%;
-      text-align: left; }
-      .my-acc-resetpass .tab-content .tab-pane .rp-left-col .content-form .form-label-desc, .my-acc-resetpass .tab-content .tab-pane .rp-left-col .content-form input {
-        width: 100%; }
-      .my-acc-resetpass .tab-content .tab-pane .rp-left-col .content-form .form-buttons {
-        margin: 20px 0 30px; }
-    .my-acc-resetpass .tab-content .tab-pane .rp-right-col {
-      margin: 5px auto; }
-      .my-acc-resetpass .tab-content .tab-pane .rp-right-col .rp-banner {
-        width: 300px;
-        height: 250px;
-        background: #e5e5e5; }
-      .my-acc-resetpass .tab-content .tab-pane .rp-right-col span {
-        font-size: 22px;
-        color: #9d9d9d;
-        text-align: center;
+  .my-acc-resetpass .tab-content span.menu-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #262626; }
+  .my-acc-resetpass .widget {
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 10px 0;
+    background: #fff;
+    border: none;
+    text-align: left; }
+  .my-acc-resetpass .widget ul {
+    border-bottom: 2px solid #dedede;
+    padding: 0 0 6px;
+    width: 100%; }
+  .my-acc-resetpass .widget a {
+    color: #222;
+    text-decoration: none; }
+  .my-acc-resetpass .widget a:hover {
+    color: #009;
+    text-decoration: underline; }
+  .my-acc-resetpass .tabnav li {
+    display: inline;
+    list-style: none;
+    padding-right: 5px; }
+  .my-acc-resetpass .widget div.tab-content {
+    text-align: center; }
+  .my-acc-resetpass .tabnav li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #262626;
+    padding: 7px 35px;
+    outline: none;
+    background: #f4f4f4;
+    border-left: 2px solid #dedede;
+    border-top: 2px solid #dedede;
+    border-right: 2px solid #dedede;
+    border-radius: 3px 3px 0 0; }
+  .my-acc-resetpass .tabnav li a:hover, .my-acc-resetpass .tabnav li a:active, .my-acc-resetpass .tabnav li.ui-tabs-selected a {
+    background: #fff;
+    color: #2fcde7;
+    text-decoration: none;
+    border-left: 2px solid #dedede;
+    border-top: 2px solid #dedede;
+    border-right: 2px solid #dedede;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 2px solid #fff; }
+  .my-acc-resetpass .tabdiv {
+    margin-top: 2px;
+    background: #fff;
+    padding: 5px; }
+  .my-acc-resetpass .tabdiv li {
+    margin-left: 20px; }
+  .my-acc-resetpass .ui-tabs-hide {
+    display: none; }
+  .my-acc-resetpass #featuredvid {
+    text-align: center; }
+  .my-acc-resetpass .fvid {
+    margin-bottom: 5px; }
+  .my-acc-resetpass .vidselector li {
+    text-align: left;
+    list-style: none;
+    padding: 5px;
+    background: #ffffff;
+    border: 1px solid #dedbd1;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .my-acc-resetpass .widget .allifiate-submenu {
+    padding: 15px 0; }
+    .my-acc-resetpass .widget .allifiate-submenu ul {
+      list-style: none;
+      border-bottom: 2px solid #e7e7e7;
+      padding: 4px 100px; }
+      .my-acc-resetpass .widget .allifiate-submenu ul li {
         display: inline-block;
-        vertical-align: middle;
-        line-height: 250px; }
+        width: 33%; }
+        .my-acc-resetpass .widget .allifiate-submenu ul li a {
+          color: #3b3b3b !important;
+          text-decoration: none !important;
+          padding: 5px 40px;
+          outline: none !important; }
+        .my-acc-resetpass .widget .allifiate-submenu ul li a:hover, .my-acc-resetpass .widget .allifiate-submenu ul li .ui-tabs-active {
+          color: #2fcde7 !important;
+          text-decoration: none;
+          border-bottom: 2px solid #2fcde7 !important; }
+      .my-acc-resetpass .widget .allifiate-submenu ul .ui-tabs-selected a {
+        color: #2fcde7 !important;
+        border-bottom: 2px solid #2fcde7 !important; }
+      .my-acc-resetpass .widget .allifiate-submenu ul li:focus {
+        border: 0 !important;
+        background: transparent !important;
+        outline: none !important; }
+    .my-acc-resetpass .widget .allifiate-submenu div[aria-hidden=true] {
+      display: none; }
+    .my-acc-resetpass .widget .allifiate-submenu .active > div.info-container, .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title,
+    .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content {
+      position: relative;
+      display: block;
+      background: #f1f1f1;
+      width: auto;
+      margin: 15px auto;
+      padding: 25px 0;
+      color: #3b3b3b; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.info-container span, .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title span,
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title span, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content span {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        padding: 4px; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.info-container p, .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title p,
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title p, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content p {
+        font-size: 15px; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.info-container .submenu-generator, .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title .submenu-generator,
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title .submenu-generator, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content .submenu-generator {
+        margin: 30px auto 5px; }
+        .my-acc-resetpass .widget .allifiate-submenu .active > div.info-container .submenu-generator input, .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title .submenu-generator input,
+        .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title .submenu-generator input, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content .submenu-generator input {
+          width: 40%;
+          background: #fff;
+          padding: 7px 15px;
+          border: 1px solid #e7e7e7;
+          border-radius: 3px; }
+        .my-acc-resetpass .widget .allifiate-submenu .active > div.info-container .submenu-generator a, .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title .submenu-generator a,
+        .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title .submenu-generator a, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content .submenu-generator a {
+          font-size: 16px;
+          padding: 5px 20px;
+          border-radius: 3px;
+          text-align: center;
+          text-transform: uppercase;
+          background: #2fcde7;
+          color: #fff;
+          border: 1px solid #2fcde7; }
+        .my-acc-resetpass .widget .allifiate-submenu .active > div.info-container .submenu-generator a:hover, .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title .submenu-generator a:hover,
+        .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title .submenu-generator a:hover, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content .submenu-generator a:hover {
+          text-decoration: none;
+          background: #fff;
+          color: #2fcde7; }
+    .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title {
+      background: none;
+      margin: 5px auto 0;
+      padding: 0; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.row-title span {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        color: #3b3b3b; }
+    .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content {
+      background: none;
+      margin: 0 auto; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title ul, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content ul {
+        border: none; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title ul > li, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content ul > li {
+        line-height: 15px; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title ul > li:nth-child(2):before, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title ul > li:nth-child(3):before, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content ul > li:nth-child(2):before, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content ul > li:nth-child(3):before {
+        position: relative;
+        content: " ";
+        display: inline-block;
+        height: 2px;
+        width: 100px;
+        background: #e7e7e7;
+        margin-left: -110px; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_title img, .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content img {
+        width: 140px; }
+    .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content {
+      padding: 4px 0;
+      float: left;
+      text-align: justify; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content p {
+        font-size: 14px; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.how-it-work_content span {
+        font-size: 24px;
+        font-weight: 600; }
+    .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page {
+      margin: 20px auto;
+      width: 100%; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .lnk-active, .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .lnk-active:active, .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .lnk-active:link, .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .lnk-active:visited {
+        font-size: 16px;
+        color: #fff;
+        padding: 6px 30px;
+        background: #2fcde7;
+        border: 1px solid #2fcde7;
+        border-radius: 3px 0 0 3px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .lnk-inactive, .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .lnk-inactive:active, .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .lnk-inactive:link .lnk-inactive:visited {
+        font-size: 16px;
+        color: #2fcde7;
+        padding: 6px 20px;
+        background: #fff;
+        border: 1px solid #2fcde7;
+        border-radius: 0 3px 3px 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .sub-tab {
+        margin: 10px auto;
+        padding: 15px 0;
+        width: 100%; }
+        .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .sub-tab div {
+          display: none; }
+        .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .sub-tab div.active, .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .sub-tab #daily.active > div, .my-acc-resetpass .widget .allifiate-submenu .active > div.stats-page .sub-tab #daily.active > div > div {
+          display: block !important; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .widget {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+    text-align: center; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .widget a {
+    color: #222;
+    text-decoration: none; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .widget a:hover {
+    color: #12a8d6;
+    text-decoration: underline; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .tabnav li.ui-tabs-selected a {
+    border: none;
+    background: none; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .tabnav li {
+    width: 33%;
+    display: inline;
+    list-style: none;
+    padding-right: 5px; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .tabnav li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #222;
+    padding: 7px 35px;
+    outline: none;
+    background: none;
+    border: none; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .tabnav li a:hover, .my-acc-resetpass .widget .tabdiv .tab-content .tabnav li a:active, .my-acc-resetpass .widget .tabdiv .tab-content .tabnav li.ui-tabs-selected a {
+    background: #fff;
+    color: #2fcde7;
+    text-decoration: none;
+    border-bottom: 2px solid #2fcde7; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .tabdiv {
+    margin-top: 2px;
+    background: #fff;
+    padding: 5px; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .tabdiv li {
+    margin-left: 20px; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .ui-tabs-hide {
+    display: none; }
+  .my-acc-resetpass .widget .tabdiv .tab-content #featuredvid {
+    text-align: center; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .fvid {
+    margin-bottom: 5px; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .vidselector li {
+    text-align: left;
+    list-style: none;
+    padding: 5px;
+    background: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .rp-left_title {
+    width: 70%;
+    text-align: left;
+    padding: 20px 0 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3b3b3b;
+    border-bottom: 1px solid #dedede; }
+  .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .content-form {
+    width: 70%;
+    text-align: left; }
+    .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .content-form .form-label-desc, .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .content-form input {
+      width: 100%; }
+    .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .content-form .form-buttons {
+      margin: 20px 0 30px; }
+  .my-acc-resetpass .tab-content .widget .tab-content .rp-right-col {
+    margin: 5px auto; }
+    .my-acc-resetpass .tab-content .widget .tab-content .rp-right-col .rp-banner {
+      width: 300px;
+      height: 250px;
+      background: #e5e5e5; }
+    .my-acc-resetpass .tab-content .widget .tab-content .rp-right-col span {
+      font-size: 22px;
+      color: #9d9d9d;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 250px; }
 
 .tfa-dis {
   width: 75% !important; }
@@ -555,152 +803,6 @@ img {
       font-size: 52px !important;
       line-height: 600px !important; }
 
-.my-acc-resetpass .tab-content .acc-submenu {
-  width: 100%;
-  text-align: center;
-  border-bottom: 2px solid #e9e9e9; }
-  .my-acc-resetpass .tab-content .acc-submenu li {
-    width: 33%;
-    float: left; }
-    .my-acc-resetpass .tab-content .acc-submenu li .active {
-      border: 2px solid #2fcde7; }
-
-.my-acc-resetpass .tab-content .allifiate-submenu {
-  padding: 15px 0; }
-  .my-acc-resetpass .tab-content .allifiate-submenu ul {
-    list-style: none;
-    border-bottom: 2px solid #e7e7e7;
-    padding: 4px 100px; }
-    .my-acc-resetpass .tab-content .allifiate-submenu ul li {
-      display: inline-block;
-      width: 33%; }
-      .my-acc-resetpass .tab-content .allifiate-submenu ul li a {
-        color: #3b3b3b !important;
-        text-decoration: none !important;
-        padding: 5px 40px;
-        outline: none !important; }
-      .my-acc-resetpass .tab-content .allifiate-submenu ul li a:hover, .my-acc-resetpass .tab-content .allifiate-submenu ul li .ui-tabs-active {
-        color: #2fcde7 !important;
-        text-decoration: none;
-        border-bottom: 2px solid #2fcde7 !important; }
-    .my-acc-resetpass .tab-content .allifiate-submenu ul .ui-state-active a {
-      color: #2fcde7 !important;
-      border-bottom: 2px solid #2fcde7 !important; }
-    .my-acc-resetpass .tab-content .allifiate-submenu ul li:focus {
-      border: 0 !important;
-      background: transparent !important;
-      outline: none !important; }
-  .my-acc-resetpass .tab-content .allifiate-submenu div[aria-hidden=true] {
-    display: none; }
-  .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title,
-  .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content {
-    position: relative;
-    display: block;
-    background: #f1f1f1;
-    width: auto;
-    margin: 15px auto;
-    padding: 25px 0;
-    color: #3b3b3b; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container span, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title span,
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title span, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content span {
-      font-size: 20px;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 500;
-      padding: 4px; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container p, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title p,
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title p, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content p {
-      font-size: 15px; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container .submenu-generator, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title .submenu-generator,
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title .submenu-generator, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content .submenu-generator {
-      margin: 30px auto 5px; }
-      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container .submenu-generator input, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title .submenu-generator input,
-      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title .submenu-generator input, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content .submenu-generator input {
-        width: 40%;
-        background: #fff;
-        padding: 7px 15px;
-        border: 1px solid #e7e7e7;
-        border-radius: 3px; }
-      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container .submenu-generator a, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title .submenu-generator a,
-      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title .submenu-generator a, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content .submenu-generator a {
-        font-size: 16px;
-        padding: 5px 20px;
-        border-radius: 3px;
-        text-align: center;
-        text-transform: uppercase;
-        background: #2fcde7;
-        color: #fff;
-        border: 1px solid #2fcde7; }
-      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.info-container .submenu-generator a:hover, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title .submenu-generator a:hover,
-      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title .submenu-generator a:hover, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content .submenu-generator a:hover {
-        text-decoration: none;
-        background: #fff;
-        color: #2fcde7; }
-  .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title {
-    background: none;
-    margin: 5px auto 0;
-    padding: 0; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.row-title span {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      color: #3b3b3b; }
-  .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content {
-    background: none;
-    margin: 0 auto; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title ul, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content ul {
-      border: none; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title ul > li, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content ul > li {
-      line-height: 15px; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title ul > li:nth-child(2):before, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title ul > li:nth-child(3):before, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content ul > li:nth-child(2):before, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content ul > li:nth-child(3):before {
-      position: relative;
-      content: " ";
-      display: inline-block;
-      height: 2px;
-      width: 100px;
-      background: #e7e7e7;
-      margin-left: -110px; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_title img, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content img {
-      width: 140px; }
-  .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content {
-    padding: 4px 0;
-    float: left;
-    text-align: justify; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content p {
-      font-size: 14px; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.how-it-work_content span {
-      font-size: 24px;
-      font-weight: 600; }
-  .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page {
-    margin: 20px auto;
-    width: 100%; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .lnk-active, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .lnk-active:active, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .lnk-active:link, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .lnk-active:visited {
-      font-size: 16px;
-      color: #fff;
-      padding: 6px 30px;
-      background: #2fcde7;
-      border: 1px solid #2fcde7;
-      border-radius: 3px 0 0 3px;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .lnk-inactive, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .lnk-inactive:active, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .lnk-inactive:link .lnk-inactive:visited {
-      font-size: 16px;
-      color: #2fcde7;
-      padding: 6px 20px;
-      background: #fff;
-      border: 1px solid #2fcde7;
-      border-radius: 0 3px 3px 0;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase; }
-    .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .sub-tab {
-      margin: 10px auto;
-      padding: 15px 0;
-      width: 100%; }
-      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .sub-tab div {
-        display: none; }
-      .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .sub-tab div.active, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .sub-tab #daily.active > div, .my-acc-resetpass .tab-content .allifiate-submenu .active > div.stats-page .sub-tab #daily.active > div > div {
-        display: block !important; }
-
 .news-content {
   margin: auto auto 40px; }
   .news-content .p-desc-title {
@@ -713,10 +815,10 @@ img {
       font-size: 22px;
       font-weight: 500; }
   .news-content .main-news-box {
-    margin: auto auto 30px;
+    margin: auto -65px 30px auto;
     border: 1px solid #d5d5d5;
     padding: 20px 10px;
-    height: 850px;
+    height: 1175px;
     overflow-y: scroll;
     resize: none;
     overflow-x: hidden;
@@ -742,20 +844,78 @@ img {
     color: #a4a4a4;
     font-size: 14px;
     padding: 10px 0 5px; }
-  .news-content .news-content-right {
-    padding: 0 20px 0 20px; }
-    .news-content .news-content-right .news-search-box form input {
-      padding: 15px 5px 25px;
-      text-align: center;
-      color: #f7f7f7;
-      border-radius: 2px; }
-    .news-content .news-content-right .select-form-curr {
-      margin-top: 35px;
-      font-family: "Open Sans", sans-serif; }
-      .news-content .news-content-right .select-form-curr .form-group label {
-        padding-left: 15px;
-        font-size: 16px;
-        color: #5e5e5e; }
-      .news-content .news-content-right .select-form-curr .form-group select {
-        height: 50px;
-        color: #929292; }
+  .news-content .news-center-col {
+    margin: auto -15px; }
+  .news-content .news-content-right .news-search-box form input {
+    width: 115%;
+    padding: 10px 5px 10px;
+    text-align: center;
+    color: #262626;
+    border-radius: 2px;
+    border: 1px solid #dedede; }
+    .news-content .news-content-right .news-search-box form input::placeholder {
+      color: #a4a4a4; }
+  .news-content .news-content-right .select-form-curr {
+    margin-top: 35px;
+    font-family: "Open Sans", sans-serif; }
+    .news-content .news-content-right .select-form-curr form select {
+      width: 115%;
+      height: 50px;
+      color: #929292; }
+  .news-content .markets-show {
+    width: 100%;
+    /* .market-tab {
+        //margin-left: -15px;
+        margin-top: 30px;
+        border: 1px solid #cbcbcb;
+        border-radius: 2px !important;
+
+        thead {
+          th {
+            background: #f7f7f7;
+            border: none;
+            color: #707070;
+            padding-left: 20px;
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            border-bottom: 1px solid #cbcbcb;
+          }
+        }
+
+        tbody tr.success > td {
+            background: #6FBD64 !important;
+          }
+
+        tbody tr.danger > td {
+            background: rgba(255, 0, 0, 0.62) !important;
+          }
+
+        tbody tr.info > td {
+            background: #2fe5ff !important;
+          }
+
+
+        tbody {
+          display: inline-block;
+          overflow-y: scroll;
+          max-height: 400px;
+          color: #393939;
+          font-size: 10.5px;
+
+          tr > td {
+            border: none;
+          }
+        }
+      }*/ }
+    .news-content .markets-show table {
+      margin-top: 30px; }
+    .news-content .markets-show table tbody {
+      max-height: 400px;
+      display: block;
+      overflow-y: scroll; }
+  .news-content .news-page-banners .rp-banner {
+    width: 300px;
+    height: 250px;
+    background: #e5e5e5;
+    margin: 25px 0 0; }
