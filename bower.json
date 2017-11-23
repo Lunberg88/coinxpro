@@ -1,9 +1,9 @@
 {
-  "name": "coinxpro",
+  "name": "walkingcure",
   "description": "",
   "main": "index.js",
   "authors": [
-    "Lunberg88"
+    "Vasya Ponomarenko"
   ],
   "license": "ISC",
   "dependencies": {

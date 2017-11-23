@@ -452,6 +452,191 @@ img {
     background: #d50000;
     border-color: #fff;
     border-radius: 50%; }
+  .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content {
+    /*** banner boxes ***/ }
+    .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.info-container, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title,
+    .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content {
+      position: relative;
+      display: block;
+      background: #f1f1f1;
+      width: auto;
+      margin: 15px auto;
+      padding: 25px 0;
+      color: #3b3b3b; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.info-container span, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title span,
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title span, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content span {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        padding: 4px; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.info-container p, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title p,
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title p, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content p {
+        font-size: 15px; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.info-container .submenu-generator, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title .submenu-generator,
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title .submenu-generator, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content .submenu-generator {
+        margin: 30px auto 5px; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.info-container .submenu-generator input, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title .submenu-generator input,
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title .submenu-generator input, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content .submenu-generator input {
+          width: 40%;
+          background: #fff;
+          padding: 7px 15px;
+          border: 1px solid #e7e7e7;
+          border-radius: 3px; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.info-container .submenu-generator a, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title .submenu-generator a,
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title .submenu-generator a, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content .submenu-generator a {
+          font-size: 16px;
+          padding: 5px 20px;
+          border-radius: 3px;
+          text-align: center;
+          text-transform: uppercase;
+          background: #2fcde7;
+          color: #fff;
+          border: 1px solid #2fcde7; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.info-container .submenu-generator a:hover, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title .submenu-generator a:hover,
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title .submenu-generator a:hover, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content .submenu-generator a:hover {
+          text-decoration: none;
+          background: #fff;
+          color: #2fcde7; }
+    .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title {
+      background: none;
+      margin: 5px auto 0;
+      padding: 0; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.row-title span {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        color: #3b3b3b; }
+    .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content {
+      background: none;
+      margin: 0 auto; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title ul, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content ul {
+        border: none;
+        list-style: none; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title ul > li, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content ul > li {
+        display: inline-block;
+        line-height: 15px;
+        width: 30%;
+        max-width: 30%; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title ul > li:nth-child(2):before, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title ul > li:nth-child(3):before, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content ul > li:nth-child(2):before, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content ul > li:nth-child(3):before {
+        position: relative;
+        content: " ";
+        display: inline-block;
+        height: 2px;
+        width: 100px;
+        background: #e7e7e7;
+        margin-left: -200px;
+        margin-right: 80px; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_title img, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content img {
+        width: 140px; }
+    .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content {
+      padding: 4px 0;
+      float: left;
+      text-align: justify; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content p {
+        font-size: 14px; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.how-it-work_content span {
+        font-size: 24px;
+        font-weight: 600; }
+    .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page {
+      margin: 20px auto;
+      width: 100%; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .lnk-active, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .lnk-active:active, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .lnk-active:link, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .lnk-active:visited {
+        font-size: 16px;
+        color: #fff;
+        padding: 6px 30px;
+        background: #2fcde7;
+        border: 1px solid #2fcde7;
+        border-radius: 3px 0 0 3px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .lnk-inactive, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .lnk-inactive:active, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .lnk-inactive:link .lnk-inactive:visited {
+        font-size: 16px;
+        color: #2fcde7;
+        padding: 6px 20px;
+        background: #fff;
+        border: 1px solid #2fcde7;
+        border-radius: 0 3px 3px 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .sub-tab {
+        margin: 10px auto;
+        padding: 15px 0;
+        width: 100%; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .sub-tab div {
+          display: none; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .sub-tab div.active, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .sub-tab #daily.active > div, .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.stats-page .sub-tab #daily.active > div > div {
+          display: block !important; }
+    .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box {
+      margin: 35px auto 30px;
+      border: 1px solid #dedede;
+      padding: 0; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_left {
+        padding: 65px 20px 65px 65px; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_left div {
+          max-width: 100%;
+          height: 300px;
+          background: #2fcde7; }
+      .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right {
+        background: #f4f4f4;
+        padding: 15px 20px;
+        color: #3c3c3c; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right label {
+          font-size: 18px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          padding-top: 5px; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .custom-select {
+          display: inline-block;
+          width: 100%;
+          height: calc(2.25rem + 2px);
+          padding: .375rem 1.75rem .375rem .75rem;
+          line-height: 1.5;
+          color: #495057;
+          vertical-align: middle;
+          background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+          background-size: 8px 10px;
+          border: 1px solid #ced4da;
+          border-radius: 2px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none; }
+          .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .custom-select:focus {
+            border-color: #80bdff;
+            outline: 0; }
+            .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .custom-select:focus::-ms-value {
+              color: #495057;
+              background-color: #fff; }
+          .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .custom-select[multiple] {
+            height: auto;
+            background-image: none; }
+          .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .custom-select:disabled {
+            color: #868e96;
+            background-color: #e9ecef; }
+          .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .custom-select::-ms-expand {
+            opacity: 0; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .export-code {
+          margin: auto 0 20px;
+          width: 100%;
+          height: 270px;
+          padding: 15px 20px;
+          overflow: hidden;
+          font-size: 18px;
+          resize: none;
+          text-align: left;
+          border: 1px solid #dedede;
+          border-radius: 3px;
+          line-height: 15px; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .default {
+          font-size: 16px;
+          color: #fff;
+          background: #2fcde7;
+          padding: 6px 20px;
+          border: 1px solid #2fcde7;
+          border-radius: 3px;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none; }
   .my-acc-resetpass .tab-content span.menu-title {
     font-size: 20px;
     font-weight: 400;
@@ -657,7 +842,7 @@ img {
   .my-acc-resetpass .widget .tabdiv .tab-content .widget {
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 0;
     background: #fff;
     text-align: center; }
   .my-acc-resetpass .widget .tabdiv .tab-content .widget a {
@@ -722,6 +907,16 @@ img {
       width: 100%; }
     .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .content-form .form-buttons {
       margin: 20px 0 30px; }
+    .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .content-form .form-buttons .cancel:hover {
+      background: #262626;
+      color: #fff;
+      border: 1px solid #262626;
+      text-decoration: none; }
+    .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .content-form .form-buttons .signin {
+      color: #fff; }
+      .my-acc-resetpass .tab-content .widget .tab-content .rp-left-col .content-form .form-buttons .signin:hover {
+        text-decoration: none;
+        color: #2fcde7; }
   .my-acc-resetpass .tab-content .widget .tab-content .rp-right-col {
     margin: 5px auto; }
     .my-acc-resetpass .tab-content .widget .tab-content .rp-right-col .rp-banner {

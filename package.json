@@ -1,7 +1,7 @@
 {
-  "name": "coinxpro",
-  "version": "1.0",
-  "author": "Lunberg88",
+  "name": "walkingcure",
+  "version": "1.0.0",
+  "author": "Vasya Ponomarenko",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.12",
