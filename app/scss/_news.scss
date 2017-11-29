@@ -1,0 +1,158 @@
+.news-content {
+  margin: auto auto 40px;
+
+  .p-desc-title {
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 300;
+
+    span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+
+  .main-news-box {
+    margin: auto -65px 30px auto;
+    border: 1px solid #d5d5d5;
+    padding: 20px 10px;
+    height: 1175px;
+    overflow-y: scroll;
+    resize: none;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    padding: 0 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: rgba(191, 191, 191, 0.8);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(72, 72, 72, 0.4);
+  }
+
+  p span {
+    font-size: 28px;
+    color: #262626;
+    padding: 5px 0 15px;
+    font-weight: 400;
+  }
+
+  .date-box {
+    color: #a4a4a4;
+    font-size: 14px;
+    padding: 10px 0 5px;
+  }
+
+  .news-center-col {
+    margin: auto -15px;
+  }
+
+  .news-content-right {
+
+    .news-search-box {
+      form input {
+        width: 115%;
+        padding: 10px 5px 10px;
+        text-align: center;
+        color: #262626;
+        border-radius: 2px;
+        border: 1px solid #dedede;
+        &::placeholder {
+          color: #a4a4a4;
+        }
+      }
+    }
+
+    .select-form-curr {
+      margin-top: 35px;
+      font-family: "Open Sans", sans-serif;
+
+        form select {
+          width: 115%;
+          height: 50px;
+          color: #929292;
+        }
+      }
+    }
+
+    .markets-show {
+      width: 100%;
+
+     /* .market-tab {
+        //margin-left: -15px;
+        margin-top: 30px;
+        border: 1px solid #cbcbcb;
+        border-radius: 2px !important;
+
+        thead {
+          th {
+            background: #f7f7f7;
+            border: none;
+            color: #707070;
+            padding-left: 20px;
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            border-bottom: 1px solid #cbcbcb;
+          }
+        }
+
+        tbody tr.success > td {
+            background: #6FBD64 !important;
+          }
+
+        tbody tr.danger > td {
+            background: rgba(255, 0, 0, 0.62) !important;
+          }
+
+        tbody tr.info > td {
+            background: #2fe5ff !important;
+          }
+
+
+        tbody {
+          display: inline-block;
+          overflow-y: scroll;
+          max-height: 400px;
+          color: #393939;
+          font-size: 10.5px;
+
+          tr > td {
+            border: none;
+          }
+        }
+      }*/
+      table {
+        margin-top: 30px;
+      }
+
+      table tbody {
+        max-height: 400px;
+        display: block;
+        overflow-y: scroll;
+      }
+    }
+
+    .news-page-banners {
+      .rp-banner {
+        width: 300px;
+        height: 250px;
+        background: #e5e5e5;
+        margin: 25px 0 0;
+      }
+    }
+}

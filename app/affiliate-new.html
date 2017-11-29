@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My account :: Allifiate</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body class="main">
+<header class="header">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header" style="font-family: 'Open Sans', sans-serif">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="assets/img/logo__.png" height="60" class="img-logo" alt="COIN X PRO">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="signin-buttons">
+                    <ul class="nav navbar-nav navbar-right header-buttons">
+                        <li><a href="signin.html" class="active">sign in</a></li>
+                        <li><a href="signup.html" class="default">register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="wrapper">
+        <section class="my-acc-resetpass">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                                <li role="presentation"><a href="#funds" aria-controls="funds" role="tab" data-toggle="tab">Funds</a></li>
+                                <li role="presentation"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">History</a></li>
+                                <li role="presentation"><a href="#ticket" aria-controls="ticket" role="tab" data-toggle="tab">Ticket</a></li>
+                                <li role="presentation" class="active"><a href="#affiliate" aria-controls="affiliate" role="tab" data-toggle="tab">Affiliate</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade" id="settings">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-12">
+                                            <span class="title-text">My Account</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="rp-left-col">
+                                                <div class="rp-left_title pull-left clearfix">
+                                                    Reset Password
+                                                </div>
+                                                <div class="content-form pull-left clearfix">
+                                                    <form class="form-login" action="#" method="POST">
+                                                        <div class="form-label">
+                                                            Original Password <span>*</span>
+                                                        </div>
+                                                        <div class="form-inputs">
+                                                            <input type="password" placeholder="">
+                                                        </div>
+                                                        <div class="form-label">
+                                                            New password <span>*</span>
+                                                        </div>
+                                                        <div class="form-inputs">
+                                                            <input type="password" placeholder="Please set your account password">
+                                                        </div>
+                                                        <div class="form-label-desc">
+                                                            <span class="hint-text">
+                                                                <p>Set a password which has at least 6 characters and it's better to</p>
+                                                                <p>contain uppercase and lowercase letters and numbers.</p>
+                                                            </span>
+                                                        </div>
+                                                        <div class="form-label">
+                                                            Confirm new password <span>*</span>
+                                                        </div>
+                                                        <div class="form-inputs">
+                                                            <input type="password" placeholder="Confirm your password">
+                                                        </div>
+                                                        <div class="form-buttons">
+                                                            <a href="#" class="cancel">cancel</a> <a href="#" class="signin">change</a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="rp-right-col">
+                                                <div class="rp-banner pull-right">
+                                                    <span>300x250</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="funds">Funds</div>
+                                <div role="tabpanel" class="tab-pane fade" id="history">History</div>
+                                <div role="tabpanel" class="tab-pane fade" id="ticket">Ticket</div>
+                                <div role="tabpanel" class="tab-pane fade in active" id="affiliate">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-12">
+
+                                            <div id="tabs" class="allifiate-submenu">
+                                                <ul>
+                                                    <li class="submenu-active"><a href="#information">Information</a></li>
+                                                    <li><a href="#banners">Banners</a></li>
+                                                    <li><a href="#statistics">Statistics</a></li>
+                                                </ul>
+                                                <div id="information" class="active">
+                                                    <div class="info-container">
+                                                        <p><span>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius.</span></p>
+                                                        <p>To start participating in affiliate program, generate your unique referral link.</p>
+                                                        <p>
+                                                            <form action="#" method="POST" class="submenu-generator">
+                                                                <input type="text" placeholder="https://support.google.com/">
+                                                                <a href="#submit">generate</a>
+                                                            </form>
+                                                        </p>
+                                                    </div>
+                                                    <div class="row-title">
+                                                        <span>How it work</span>
+                                                    </div>
+                                                    <div class="how-it-work_title">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="assets/img/how-it-work-img1.svg" alt="How It Work">
+                                                                <p>1) How it work</p>
+                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/img/how-it-work-img2.svg" alt="How It Work">
+                                                                <p>2) How it work</p>
+                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/img/how-it-work-img3.svg" alt="How It Work">
+                                                                <p>3) How it work</p>
+                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="how-it-work_content">
+                                                        <p><span>Lorem ipsum dolor sit amet</span></p>
+                                                        <p>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius. Eam rebum mediocrem at, in qui homero integre. Accusam detraxit laboramus at pro, ad usu quas integre theophrastus. Zril tacimates definitionem cu ius. Ludus equidem ne est, ex est zril oblique consequuntur.</p>
+                                                        <p>Ut idque delenit feugait sed, per id electram patrioque. Nec sale labore in, erant perpetua sea te. Decore scripserit sea an, sed id harum diceret dissentias. Prodesset tincidunt duo ex, an mei feugiat invidunt interpretaris. Ad cum solet nominati, explicari dissentias vix an, pri id ceteros recteque disputationi. Has nostro fabulas fierent ea, nam ea duis viderer, integre electram cu quo.</p>
+                                                        <br />
+                                                        <p><span>Lorem ipsum dolor sit amet</span></p>
+                                                        <p>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius. Eam rebum mediocrem at, in qui homero integre. Accusam detraxit laboramus at pro, ad usu quas integre theophrastus. Zril tacimates definitionem cu ius. Ludus equidem ne est, ex est zril oblique consequuntur.</p>
+                                                        <p>Ut idque delenit feugait sed, per id electram patrioque. Nec sale labore in, erant perpetua sea te. Decore scripserit sea an, sed id harum diceret dissentias. Prodesset tincidunt duo ex, an mei feugiat invidunt interpretaris. Ad cum solet nominati, explicari dissentias vix an, pri id ceteros recteque disputationi. Has nostro fabulas fierent ea, nam ea duis viderer, integre electram cu quo.</p>
+                                                        <p>Ut idque delenit feugait sed, per id electram patrioque. Nec sale labore in, erant perpetua sea te. Decore scripserit sea an, sed id harum diceret dissentias. Prodesset tincidunt duo ex, an mei feugiat invidunt interpretaris. Ad cum solet nominati, explicari dissentias vix an, pri id ceteros recteque disputationi. Has nostro fabulas fierent ea, nam ea duis viderer, integre electram cu quo.</p>
+                                                        <br />
+                                                        <p><span>Lorem ipsum dolor sit amet</span></p>
+                                                        <p>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius. Eam rebum mediocrem at, in qui homero integre. Accusam detraxit laboramus at pro, ad usu quas integre theophrastus. Zril tacimates definitionem cu ius. Ludus equidem ne est, ex est zril oblique consequuntur.</p>
+                                                    </div>
+                                                </div>
+                                                <div id="banners" class="active">
+                                                    <p>Banners</p>
+                                                </div>
+                                                <div id="statistics" class="active">
+                                                    <div class="info-container">
+                                                        <p><span>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius.</span></p>
+                                                        <p>To start participating in affiliate program, generate your unique referral link.</p>
+                                                        <p>
+                                                        <form action="#" method="POST" class="submenu-generator">
+                                                            <input type="text" placeholder="https://support.google.com/">
+                                                            <a href="#submit">generate</a>
+                                                        </form>
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats-page pull-left">
+                                                        <div id="sub-tabs">
+                                                            <a href="#daily" class="lnk-active">daily</a><a href="#monthly" class="lnk-inactive">monthly</a>
+                                                        </div>
+                                                        <div class="sub-tab pull-left">
+                                                            <div id="daily" class="active">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-md-6">Data Range</div>
+                                                                    <div class="col-xs-12 col-md-1">Visits</div>
+                                                                    <div class="col-xs-12 col-md-1">Registration</div>
+                                                                    <div class="col-xs-12 col-md-1">Deposit</div>
+                                                                    <div class="col-xs-12 col-md-1">Orders</div>
+                                                                    <div class="col-xs-12 col-md-1">Fees ($)</div>
+                                                                    <div class="col-xs-12 col-md-1">Bonus ($)</div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="monthly"><p>Monthly</p></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!--end wrapper-->
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">terms of use</a></li>
+                    <li><a href="#">add coin</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">faq</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="foot-banner-sm">
+                    <img src="assets/img/footer-baner_small.png" alt="COIN X PRO">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <span class="foot-copyrights">&copy; 2015-2017 coinxpro</span>
+                <div class="chat-modal">
+                    open chat <span class="badge">3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/main.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

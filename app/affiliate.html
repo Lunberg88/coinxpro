@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My account :: Allifiate</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body class="main">
+<header class="header">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header" style="font-family: 'Open Sans', sans-serif">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="assets/img/logo__.png" height="60" class="img-logo" alt="COIN X PRO">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="signin-buttons">
+                    <ul class="nav navbar-nav navbar-right header-buttons">
+                        <li><a href="signin.html" class="active">sign in</a></li>
+                        <li><a href="signup.html" class="default">register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="wrapper">
+        <section class="my-acc-resetpass">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div>
+                            <!-- -->
+                            <div id="tabvanilla" class="widget">
+                                <ul class="tabnav">
+                                    <li><a href="#settings">Settings</a></li>
+                                    <li><a href="#funds">Funds</a></li>
+                                    <li><a href="#history">History</a></li>
+                                    <li><a href="#ticket">Ticket</a></li>
+                                    <li><a href="#affiliate">Affiliate</a></li>
+                                </ul>
+                                <div id="settings" class="tabdiv">
+                                    <div class="tab-content">
+                                        <p><span class="menu-title">Settings</span></p>
+                                    </div>
+                                    <div class="tab-content">
+                                        <!-- My account sub-menu -->
+                                        <div id="tabvanilla-1" class="widget">
+                                            <ul class="tabnav">
+                                                <li><a href="#main">My account</a></li>
+                                                <li><a href="#reset-pass">Reset password</a></li>
+                                                <li><a href="#tfa">Two-Factor Authentication</a></li>
+                                                <li><a href="#dis-tfa">Disable Two-Factor Authentication</a></li>
+                                            </ul>
+                                            <div id="main">
+                                                <div class="tab-content">
+                                                    <p>Main page</p>
+                                                </div>
+                                            </div>
+                                            <div id="reset-pass">
+                                                <div class="tab-content">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-8">
+                                                            <div class="rp-left-col">
+                                                                <div class="content-form pull-left clearfix">
+                                                                    <form class="form-login" action="#" method="POST">
+                                                                        <div class="form-label">
+                                                                            Original Password <span>*</span>
+                                                                        </div>
+                                                                        <div class="form-inputs">
+                                                                            <input type="password" placeholder="">
+                                                                        </div>
+                                                                        <div class="form-label">
+                                                                            New password <span>*</span>
+                                                                        </div>
+                                                                        <div class="form-inputs">
+                                                                            <input type="password" placeholder="Please set your account password">
+                                                                        </div>
+                                                                        <div class="form-label-desc">
+                                                                            <span class="hint-text">
+                                                                                <p>Set a password which has at least 6 characters and it's better to</p>
+                                                                                <p>contain uppercase and lowercase letters and numbers.</p>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="form-label">
+                                                                            Confirm new password <span>*</span>
+                                                                        </div>
+                                                                        <div class="form-inputs">
+                                                                            <input type="password" placeholder="Confirm your password">
+                                                                        </div>
+                                                                        <div class="form-buttons">
+                                                                            <a href="#" class="cancel">cancel</a> <a href="#" class="signin">change</a>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <div class="rp-right-col">
+                                                                <div class="rp-banner pull-right">
+                                                                    <span>300x250</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tfa">
+                                                <div class="tab-content">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-8">
+                                                            <div class="rp-left-col tfa">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-md-12">
+                                                                        <div class="rp-left_title pull-left clearfix">
+                                                                            Two-Factor Authentication
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-md-12">
+                                                                        <div class="rp-left_content pull-left clearfix">
+                                                                            <div><i class="fa fa-apple"></i> Iphone iOS</div>
+                                                                            <div><i class="fa fa-android"></i> Android</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-md-12">
+                                                                        <div class="rp-guide_box pull-left">
+                                                                            <div>
+                                                                                <p><span>Step 1</span></p>
+                                                                            </div>
+                                                                            <div class="guide-box_txt">
+                                                                                <p>Install Google Authenticator app on your smart phone</p>
+                                                                                <p>and open it. Installation instructions</p>
+                                                                            </div>
+                                                                            <div>
+                                                                                <p><span>Step 2</span></p>
+                                                                            </div>
+                                                                            <div class="guide-box_txt">
+                                                                                <p>Scan the following QR-code with Google Authenticator APP,</p>
+                                                                                <p>or add cipher text to the validator manually.</p>
+                                                                            </div>
+                                                                            <div>
+                                                                                <p><span>QR-code</span></p>
+                                                                                <p><img src="assets/img/tfa_qr_code_img.png" alt="QR-code"></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-md-12">
+                                                                        <div class="content-form pull-left clearfix">
+                                                                            <form class="form-login" action="#" method="POST">
+                                                                                <div class="form-label">
+                                                                                    Ciphertext <span>*</span>
+                                                                                </div>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control" placeholder="v78skjHJbkY982">
+                                                                                    <span class="input-group-btn">
+                                                                        <button id="re-generate" class="btn btn-default" type="button">
+                                                                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                                                                        </button>
+                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-label-desc tfa">
+                                                                    <span class="guide_text">
+                                                                        <p><span>Step 3</span></p>
+                                                                        <p>Fill in the dynamic password displayed by your phone to</p>
+                                                                        <p>activate Two-Factor Authentication.</p>
+                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-label">
+                                                                                    Password on the Authenticator <span>*</span>
+                                                                                </div>
+                                                                                <div class="form-inputs">
+                                                                                    <input type="password" placeholder="v78skjHJbkY982">
+                                                                                </div>
+                                                                                <div class="form-buttons">
+                                                                                    <a href="#" class="cancel">cancel</a> <a href="#" class="signin">enable</a>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <div class="rp-right-col tfa">
+                                                                <div class="rp-banner pull-right">
+                                                                    <span>300x600</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="dis-tfa">
+                                                <div class="tab-content">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-8">
+                                                            <div class="rp-left-col">
+                                                                <div class="rp-left_title tfa-dis pull-left clearfix">
+                                                                    <div class="rp-info_icon">
+                                                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                                                    </div>
+                                                                    <div class="rp-info_text">
+                                                                        <div class="top_text">
+                                                                            <p>Disable Two-Factor Authentication</p>
+                                                                            <p>If you have a new phone, you can disable Two-Factor Authentication in the</p>
+                                                                            <p>old phone, and enable Two-Factor Authentication with the new one.</p>
+                                                                        </div>
+                                                                        <div class="bot_text">
+                                                                            <p>Tip: if you have lost your Two-Factor Authentication by some reason and</p>
+                                                                            <p>can't login your CoinxPro account, please contact our online customer</p>
+                                                                            <p>service.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-form tfa-dis pull-left clearfix">
+                                                                    <form class="form-login" action="#" method="POST">
+                                                                        <div class="form-label">
+                                                                            Google Authenticator <span>*</span>
+                                                                        </div>
+                                                                        <div class="form-inputs">
+                                                                            <input type="password" placeholder="6-digit password">
+                                                                        </div>
+                                                                        <div class="form-label-desc">
+                                                            <span class="hint-text">
+                                                                <p>Google Authenticator will re-generate a new password every thirty</p>
+                                                                <p>seconds, please input timely.</p>
+                                                            </span>
+                                                                        </div>
+                                                                        <div class="form-buttons">
+                                                                            <a href="#" class="cancel">cancel</a> <a href="#" class="signin">disable</a>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <div class="rp-right-col">
+                                                                <div class="rp-banner pull-right">
+                                                                    <span>300x250</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end sub-menu -->
+                                    </div>
+                                </div>
+                                <div id="funds" class="tabdiv">
+                                    <div class="tab-content">
+                                        <p><span class="menu-title">Funds page</span></p>
+                                    </div>
+                                </div>
+                                <div id="history" class="tabdiv">
+                                    <div class="tab-content">
+                                        <p><span class="menu-title">History page</span></p>
+                                    </div>
+                                </div>
+                                <div id="ticket" class="tabdiv">
+                                    <div class="tab-content">
+                                        <p><span class="menu-title">Tickets</span></p>
+                                    </div>
+                                </div>
+                                <div id="affiliate" class="tabdiv">
+                                    <div class="tab-content">
+                                        <p><span class="menu-title">Affiliate</span></p>
+                                    </div>
+                                    <div class="tab-content">
+
+                                        <!-- Affiliate sub-menu -->
+                                        <div id="tabvanilla-5" class="widget">
+                                            <ul class="tabnav">
+                                                <li><a href="#information">Information</a></li>
+                                                <li><a href="#banners">Banners</a></li>
+                                                <li><a href="#statistics">Statistics</a></li>
+                                            </ul>
+                                            <div id="information" class="active">
+                                                <div class="tab-content">
+                                                    <div class="info-container">
+                                                        <p><span>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius.</span></p>
+                                                        <p>To start participating in affiliate program, generate your unique referral link.</p>
+                                                        <p>
+                                                        <form action="#" method="POST" class="submenu-generator">
+                                                            <input type="text" placeholder="https://support.google.com/">
+                                                            <a href="#submit">generate</a>
+                                                        </form>
+                                                        </p>
+                                                    </div>
+                                                    <div class="row-title">
+                                                        <span>How it work</span>
+                                                    </div>
+                                                    <div class="how-it-work_title">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="assets/img/how-it-work-img1.svg" alt="How It Work">
+                                                                <p>1) How it work</p>
+                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/img/how-it-work-img2.svg" alt="How It Work">
+                                                                <p>2) How it work</p>
+                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                            </li>
+                                                            <li>
+                                                                <img src="assets/img/how-it-work-img3.svg" alt="How It Work">
+                                                                <p>3) How it work</p>
+                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="how-it-work_content">
+                                                        <p><span>Lorem ipsum dolor sit amet</span></p>
+                                                        <p>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius. Eam rebum mediocrem at, in qui homero integre. Accusam detraxit laboramus at pro, ad usu quas integre theophrastus. Zril tacimates definitionem cu ius. Ludus equidem ne est, ex est zril oblique consequuntur.</p>
+                                                        <p>Ut idque delenit feugait sed, per id electram patrioque. Nec sale labore in, erant perpetua sea te. Decore scripserit sea an, sed id harum diceret dissentias. Prodesset tincidunt duo ex, an mei feugiat invidunt interpretaris. Ad cum solet nominati, explicari dissentias vix an, pri id ceteros recteque disputationi. Has nostro fabulas fierent ea, nam ea duis viderer, integre electram cu quo.</p>
+                                                        <br />
+                                                        <p><span>Lorem ipsum dolor sit amet</span></p>
+                                                        <p>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius. Eam rebum mediocrem at, in qui homero integre. Accusam detraxit laboramus at pro, ad usu quas integre theophrastus. Zril tacimates definitionem cu ius. Ludus equidem ne est, ex est zril oblique consequuntur.</p>
+                                                        <p>Ut idque delenit feugait sed, per id electram patrioque. Nec sale labore in, erant perpetua sea te. Decore scripserit sea an, sed id harum diceret dissentias. Prodesset tincidunt duo ex, an mei feugiat invidunt interpretaris. Ad cum solet nominati, explicari dissentias vix an, pri id ceteros recteque disputationi. Has nostro fabulas fierent ea, nam ea duis viderer, integre electram cu quo.</p>
+                                                        <p>Ut idque delenit feugait sed, per id electram patrioque. Nec sale labore in, erant perpetua sea te. Decore scripserit sea an, sed id harum diceret dissentias. Prodesset tincidunt duo ex, an mei feugiat invidunt interpretaris. Ad cum solet nominati, explicari dissentias vix an, pri id ceteros recteque disputationi. Has nostro fabulas fierent ea, nam ea duis viderer, integre electram cu quo.</p>
+                                                        <br />
+                                                        <p><span>Lorem ipsum dolor sit amet</span></p>
+                                                        <p>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius. Eam rebum mediocrem at, in qui homero integre. Accusam detraxit laboramus at pro, ad usu quas integre theophrastus. Zril tacimates definitionem cu ius. Ludus equidem ne est, ex est zril oblique consequuntur.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="banners" class="active">
+                                                <div class="tab-content">
+                                                    <div class="info-container">
+                                                        <p><span>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius.</span></p>
+                                                        <p>To start participating in affiliate program, generate your unique referral link.</p>
+                                                        <p>
+                                                        <form action="#" method="POST" class="submenu-generator">
+                                                            <input type="text" placeholder="https://support.google.com/">
+                                                            <a href="#submit">generate</a>
+                                                        </form>
+                                                        </p>
+                                                    </div>
+                                                    <div class="banner-box">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 col-md-6">
+                                                                <div class="banner-box_left">
+                                                                    <div></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-6">
+                                                                <div class="banner-box_right">
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12 col-md-6">
+                                                                            <label for="banner1">Choose banner size:</label>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-md-6">
+                                                                            <select id="banner1" class="custom-select">
+                                                                                <option value="1">360 x 274</option>
+                                                                                <option value="2">Next val</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12 col-md-6">
+                                                                            <label for="type1">Choose type:</label>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-md-6">
+                                                                            <input type="checkbox" id="type1" name="type1" value="0">
+                                                                            <input type="checkbox" id="type2" name="type1" value="1">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12 col-md-12">
+                                                                            <textarea class="export-code">
+                                                                                <!DOCTYPE HTML>
+                                                                                <html>
+                                                                                <head>
+                                                                                <meta charset="utf-8">
+                                                                                <title>Тег CODE</title>
+                                                                                <head>
+                                                                                <body>
+                                                                            </textarea>
+                                                                            <a href="#" class="default pull-right">copy</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="statistics" class="active">
+                                                <div class="tab-content">
+                                                    <div class="info-container">
+                                                        <p><span>Lorem ipsum dolor sit amet, ei scripta appareat platonem ius.</span></p>
+                                                        <p>To start participating in affiliate program, generate your unique referral link.</p>
+                                                        <p>
+                                                        <form action="#" method="POST" class="submenu-generator">
+                                                            <input type="text" placeholder="https://support.google.com/">
+                                                            <a href="#submit">generate</a>
+                                                        </form>
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats-page pull-left">
+                                                        <div id="sub-tabs" class="pull-left">
+                                                            <a href="#daily" class="lnk-active">daily</a><a href="#monthly" class="lnk-inactive">monthly</a>
+                                                        </div>
+                                                        <div class="sub-tab pull-left">
+                                                            <div id="daily" class="active">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-md-6">Data Range</div>
+                                                                    <div class="col-xs-12 col-md-1">Visits</div>
+                                                                    <div class="col-xs-12 col-md-1">Registration</div>
+                                                                    <div class="col-xs-12 col-md-1">Deposit</div>
+                                                                    <div class="col-xs-12 col-md-1">Orders</div>
+                                                                    <div class="col-xs-12 col-md-1">Fees ($)</div>
+                                                                    <div class="col-xs-12 col-md-1">Bonus ($)</div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="monthly"><p>Monthly</p></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end sub-menu -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!--end wrapper-->
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">terms of use</a></li>
+                    <li><a href="#">add coin</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">faq</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="foot-banner-sm">
+                    <img src="assets/img/footer-baner_small.png" alt="COIN X PRO">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <span class="foot-copyrights">&copy; 2015-2017 coinxpro</span>
+                <div class="chat-modal">
+                    open chat <span class="badge">3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/main.js -->
+<script src="js/jqs-1.2.1.js"></script>
+<script src="js/jqpl-1.2.6.js"></script>
+<script src="js/jq-tabs.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+<!-- endbuild -->
+</body>
+</html>
