@@ -1,4 +1,4 @@
-.news-content {
+.news-content, .dice-content {
   margin: auto auto 40px;
 
   .p-desc-title {
@@ -92,50 +92,6 @@
     .markets-show {
       width: 100%;
 
-     /* .market-tab {
-        //margin-left: -15px;
-        margin-top: 30px;
-        border: 1px solid #cbcbcb;
-        border-radius: 2px !important;
-
-        thead {
-          th {
-            background: #f7f7f7;
-            border: none;
-            color: #707070;
-            padding-left: 20px;
-            font-size: 16px;
-            font-family: "Open Sans", sans-serif;
-            font-weight: 600;
-            border-bottom: 1px solid #cbcbcb;
-          }
-        }
-
-        tbody tr.success > td {
-            background: #6FBD64 !important;
-          }
-
-        tbody tr.danger > td {
-            background: rgba(255, 0, 0, 0.62) !important;
-          }
-
-        tbody tr.info > td {
-            background: #2fe5ff !important;
-          }
-
-
-        tbody {
-          display: inline-block;
-          overflow-y: scroll;
-          max-height: 400px;
-          color: #393939;
-          font-size: 10.5px;
-
-          tr > td {
-            border: none;
-          }
-        }
-      }*/
       table {
         margin-top: 30px;
       }

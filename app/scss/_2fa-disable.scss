@@ -15,12 +15,133 @@
         line-height: 12px;
       p:first-child {
         color: #3b3b3b;
-        font-weight: 500;
+        font-weight: 600;
       }
     }
     .bot_text {
       padding-top: 10px;
+
+      .group-checkboxes {
+        font-weight: normal !important;
+        p {
+          line-height: 20px;
+        }
+
+        input[type=checkbox] {
+          display: none;
+        }
+        input[type=checkbox]:checked + label:before {
+          content: '\f14a';
+          color: #00b3ee;
+          font-size: 24px;
+          font-weight: normal;
+        }
+
+        input[type=checkbox]:checked + label:after {
+          position: relative;
+          width: 200px;
+          top: 5px;
+          left: 50px;
+          content: '\f05d  Confirmed';
+          font-family: FontAwesome, sans-serif;
+          font-size: 15px;
+          font-weight: normal;
+          color: #6FBD64;
+          text-align: left;
+          float: right;
+        }
+        label {
+          width: 370px;
+          padding-left: 2.1875rem;
+          padding-top: 6px;
+          position: relative;
+          color: #3b3b3b;
+          font-weight: normal;
+          text-decoration: none;
+        }
+        label:before {
+          position: absolute;
+          font-family: FontAwesome;
+          content: '\f096';
+          font-weight: normal;
+          font-size: 26px;
+          top: .625rem;
+          color: #acacac;
+          left: .3125rem;
+        }
+        input[type=checkbox] + label:after {
+          position: relative;
+          width: 200px;
+          top: 5px;
+          left: 50px;
+          content: '\f05d  Disable';
+          color: #d46d69;
+          font-family: FontAwesome, sans-serif;
+          font-size: 15px;
+          font-weight: normal;
+          text-align: left;
+          float: right;
+        }
+      }
+    }
+
+
+    .label-button-acc {
+      position: relative;
+      top: -40px;
+      width: 140px;
+      background: #6FBD64;
+      padding: 10px 5px;
+      text-align: center;
+      border-radius: 2px;
+
+      .badge {
+        position: absolute;
+        top: -18%;
+        right: -6%;
+        background: #d46d69;
+        border: 2px solid #fff;
+        padding: 2px 6px;
+      }
+    }
+
+    .btt-red {
+      background: #d46d69;
+      padding: 14px 5px !important;
+    }
+    .btt-blue {
+      background: #2fcde7;
+      padding: 14px 5px !important;
     }
   }
 
+
+
+}
+
+.tfa-dis-acc {
+  width: 100% !important;
+}
+
+.tfa-dis-acc .rp-info_text, .tfa-dis-accb .rp-info_text {
+  width: 95%;
+}
+.tfa-dis-acc .rp-info_icon, .tfa-dis-accb .rp-info_icon {
+  width: 4%;
+}
+
+.tfa-dis-accb {
+  width: 100% !important;
+  border: none !important;
+
+  .rp-info_text div.label-button-acc {
+    position: relative;
+    top: -40px;
+    width: 140px;
+    //background: #6FBD64;
+    padding: 12px 5px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+  }
 }

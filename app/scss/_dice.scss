@@ -1,0 +1,106 @@
+.main-dice-box {
+  margin: auto -65px 30px auto;
+  border: 1px solid #d5d5d5;
+  padding: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.main-dice-box div.top-title-box {
+  width: 100%;
+  padding: 4px 0;
+}
+
+.main-dice-box div.top-title-box > div {
+  width: 19%;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #2fcde7;
+  text-align: left;
+}
+
+.main-dice-box div.top-title-box > div:last-child {
+  text-align: right;
+  color: #5e5e5e;
+  padding-right: 10px;
+}
+
+.main-dice-box div.top-body-box > div {
+  margin: 10px auto 35px;
+  width: 19%;
+  display: inline-block;
+  input, select {
+    height: 46px !important;
+    padding: 10px 6px !important;
+  }
+}
+
+.main-dice-box div.top-body-box {
+  div:nth-child(4), div:nth-child(5) {
+    text-align: center;
+    a, a:link, a:visited, a:active {
+      width: 240px;
+      font-size: 14px;
+      color: #fff;
+      background: #2fcde7;
+      padding: 12px 60px;
+      font-weight: 400;
+      border: 1px solid #2fcde7;
+      border-radius: 3px;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+.main-dice-box div.bottom-box {
+  width: 100%;
+  padding: 3px 15px;
+  border-top: 1px solid #bdbdbd;
+  text-align: left;
+  span {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #5e5e5e;
+  }
+}
+
+.main-dice-box div.history-rates-box table.history-rates {
+  margin: auto auto -20px;
+  thead > tr > th {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3c3c3c;
+    padding-left: 15px;
+  }
+  tbody > tr > td {
+    padding: 4px 6px;
+    color: #3c3c3c;
+  }
+  tbody > tr {
+    &:hover {
+      cursor: pointer;
+      background-color: #2fcde7 !important;
+    }
+  }
+}
+
+.dice-body-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  width: 100%;
+  font-size: 13px;
+  color: #5e5e5e;
+  p {
+    margin: 0;
+  }
+  span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #5e5e5e !important;
+  }
+}

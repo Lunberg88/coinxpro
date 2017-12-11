@@ -1,7 +1,7 @@
 $(function() {
     $( "#tabs" ).tabs();
 
-    var sb = $('#sub-tabs a');
+    var sb = $('#sub-menu a');
     sb.click(function(e) {
         e.preventDefault();
         $(this).tab('show');
@@ -55,4 +55,10 @@ $(function() {
         field.attr('placeholder', token());
     });
 
+    $('a:contains("copy")').click(function() {
+        $('textarea').each(function() {
+            $(this).select();
+            document.execCommand('copy');
+        })
+    });
 });

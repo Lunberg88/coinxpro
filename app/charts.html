@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Charts</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body class="main" style="width: 1200px;">
+<header class="header">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container dash-navbar">
+            <div class="navbar-header" style="font-family: 'Open Sans', sans-serif">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Project name</a>-->
+                <img src="assets/img/logo__.png" height="60" class="img-logo" alt="COIN X PRO">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-menu">
+                    <ul class="nav navbar-nav navbar-left menu-main">
+                        <li><a href="#markets" class="active"><img src="assets/img/img-markets-on.svg"> markets</a></li>
+                        <li><a href="#news"><img src="assets/img/img-list.svg"> news</a></li>
+                        <li><a href="#dice"><img src="assets/img/img-bone.svg"> dice</a></li>
+                    </ul>
+                </div>
+                <div class="signin-buttons">
+                    <ul class="nav navbar-nav navbar-right acc-links">
+                        <li class="my-acc"><a href="#myaccount">my account<span class="badge">3</span></a></li>
+                        <li class="dropdown">
+                            <a href="#lang-us" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img
+                                    src="assets/img/lang-us.png" width="30" alt="U.S. Language"> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#lang-ru">Ru</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <form action="#" method="POST" name="logout-form">
+                                <a href="#logout"><img src="assets/img/logout-btn.svg" width="45" alt="Logout"></a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="wrapper">
+        <section class="market-content chart-board">
+            <div class="container market-row">
+                <div class="row">
+                    <!-- Top head coin-boxes -->
+                    <div class="market-top-coin-boxes">
+                        <div class="m-coin-box">
+                            <div class="m-coin-box-left">
+                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
+                            </div>
+                            <div class="m-coin-box-right">
+                                <p><span>BTC_STAR</span></p>
+                                <p>StarCash</p>
+                                <p>0.00000000</p>
+                            </div>
+                        </div>
+                        <div class="m-coin-box">
+                            <div class="m-coin-box-left">
+                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
+                            </div>
+                            <div class="m-coin-box-right">
+                                <p><span>BTC_TAJ</span></p>
+                                <p>StarCash</p>
+                                <p>0.00000000</p>
+                            </div>
+                        </div>
+                        <div class="m-coin-box active-box">
+                            <div class="m-coin-box-left">
+                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
+                            </div>
+                            <div class="m-coin-box-right">
+                                <p><span>BTC_BCCS</span></p>
+                                <p>StarCash</p>
+                                <p>0.00000000</p>
+                            </div>
+                        </div>
+                        <div class="m-coin-box">
+                            <div class="m-coin-box-left">
+                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
+                            </div>
+                            <div class="m-coin-box-right">
+                                <p><span>BTC_STAR</span></p>
+                                <p>StarCash</p>
+                                <p>0.00000000</p>
+                            </div>
+                        </div>
+                        <div class="m-coin-box">
+                            <div class="m-coin-box-left">
+                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
+                            </div>
+                            <div class="m-coin-box-right">
+                                <p><span>BTC_TAJ</span></p>
+                                <p>StarCash</p>
+                                <p>0.00000000</p>
+                            </div>
+                        </div>
+                        <div class="m-coin-box danger-box">
+                            <div class="m-coin-box-left">
+                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
+                            </div>
+                            <div class="m-coin-box-right">
+                                <p><span>BTC_BCCS</span></p>
+                                <p>StarCash</p>
+                                <p>0.00000000</p>
+                            </div>
+                        </div>
+
+                        <div class="m-coin-box">
+                            <div class="m-coin-box-left">
+                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
+                            </div>
+                            <div class="m-coin-box-right">
+                                <p><span>BTC_SURGE</span></p>
+                                <p>StarCash</p>
+                                <p>0.00000000</p>
+                            </div>
+                        </div>
+                        <div class="m-coin-box">
+                            <div class="m-coin-box-left">
+                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
+                            </div>
+                            <div class="m-coin-box-right">
+                                <p><span>BTC_SURGE</span></p>
+                                <p>StarCash</p>
+                                <p>0.00000000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- //End -->
+                </div>
+                <div class="row">
+                    <!-- Main market-content -->
+                    <div class="col-md-3">
+                        <div class="chart-left-col">
+                            <div class="left-body-title">
+                                <div class="body-title-img">
+                                    <img src="assets/img/coin-box-img4.png" width="75" alt="Currency">
+                                </div>
+                                <div class="body-title-text">
+                                    <p>RPTCOIN</p>
+                                    <p>REC</p>
+                                </div>
+                            </div>
+                            <div class="left-body-content">
+                                <p><span>last price</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>24h volume</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>bid</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>ask</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>24h high</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>24h low</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>24h trade count</span><span class="pull-right">0,0065078430</span></p>
+                            </div>
+                            <div class="left-body-header">
+                                Coin market capital
+                                <span class="pull-right">
+                                    <img src="assets/img/chart-header-img-list.svg" width="15" alt="List market">
+                                    <img src="assets/img/chart-header-img-rates.svg" width="10" alt="Rates">
+                                </span>
+                            </div>
+                            <div class="left-body-content bottom-text">
+                                <p><span>BTC Price</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>USD Price</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>24h Volume USD</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>Available Supply</span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>Change 1h|24|7d </span><span class="pull-right">0,0065078430</span></p>
+                            </div>
+                            <div class="left-body-icons">
+                                <div class="social-icon">
+                                    <img src="assets/img/social-icon-fb.svg" width="20" alt="Facebook">
+                                </div>
+                                <div class="social-icon">
+                                    <img src="assets/img/social-icon-btc.svg" width="20" alt="BTC">
+                                </div>
+                                <div class="social-icon">
+                                    <img src="assets/img/social-icon-tw.svg" width="20" alt="Twitter">
+                                </div>
+                                <div class="social-icon">
+                                    <img src="assets/img/social-icon-web.svg" width="20" alt="Web">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-left-social">
+                            <div class="chart-social-icons pull-left">
+                                <a href="#"><i class="fa fa-facebook"><span class="badge">3</span></i></a>
+                                <a href="#"><i class="fa fa-twitter twt"></i></a>
+                                <a href="#"><i class="fa fa-google-plus ggp"></i></a>
+                                <a href="#"><i class="fa fa-instagram isg"></i></a>
+                            </div>
+                            <div class="market-link-btns">
+                                <a href="#" class="lnk-support">Support</a>
+                            </div>
+                        </div>
+                        <div class="market-rates-table">
+                            <table class="table market-tab" id="market1">
+                                <thead>
+                                    <tr>
+                                        <th colspan="3">Markets</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="info">
+                                        <td>RPT</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CMP</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>MALC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BTC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RPT</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CMP</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>MALC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BTC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BTC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RPT</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CMP</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>MALC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BTC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BTC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RPT</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CMP</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>MALC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BTC</td>
+                                        <td>90.051</td>
+                                        <td>12.12%</td>
+                                        <td>0.00000000485</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="chart-news-box">
+                           <div class="chart-news-title">
+                               News
+                           </div>
+                            <div class="chart-news-body">
+                                <div class="news-tab-list">
+                                    <p><span>colx</span><span class="pull-right">26th April, 2017</span></p>
+                                    <p>Ticket for Digitalprice DP has benn changed to DPOLD, and coinname to Digitalpriceold, because a new Digitalprice coin is created.</p>
+                                </div>
+                                <div class="news-tab-list">
+                                    <p><span>colx</span><span class="pull-right">26th April, 2017</span></p>
+                                    <p>Ticket for Digitalprice DP has benn changed to DPOLD, and coinname to Digitalpriceold, because a new Digitalprice coin is created.</p>
+                                </div>
+                                <div class="news-tab-list">
+                                    <p><span>colx</span><span class="pull-right">26th April, 2017</span></p>
+                                    <p>Ticket for Digitalprice DP has benn changed to DPOLD, and coinname to Digitalpriceold, because a new Digitalprice coin is created.</p>
+                                </div>
+                                <div class="news-tab-list">
+                                    <p><span>colx</span><span class="pull-right">26th April, 2017</span></p>
+                                    <p>Ticket for Digitalprice DP has benn changed to DPOLD, and coinname to Digitalpriceold, because a new Digitalprice coin is created.</p>
+                                </div>
+                                <div class="news-tab-list">
+                                    <p><span>colx</span><span class="pull-right">26th April, 2017</span></p>
+                                    <p>Ticket for Digitalprice DP has benn changed to DPOLD, and coinname to Digitalpriceold, because a new Digitalprice coin is created.</p>
+                                </div>
+                                <div class="news-tab-list">
+                                    <p><span>colx</span><span class="pull-right">26th April, 2017</span></p>
+                                    <p>Ticket for Digitalprice DP has benn changed to DPOLD, and coinname to Digitalpriceold, because a new Digitalprice coin is created.</p>
+                                </div>
+                                <div class="news-tab-list">
+                                    <p><span>colx</span><span class="pull-right">26th April, 2017</span></p>
+                                    <p>Ticket for Digitalprice DP has benn changed to DPOLD, and coinname to Digitalpriceold, because a new Digitalprice coin is created.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-left-banner">
+                            <img src="http://via.placeholder.com/300x250" alt="Your Banner">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="chart-body-top">
+                                    <div class="chart-graph-box">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="buy-sell-rpt">
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="buy-sell-rpt">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                Sell Orders
+                            </div>
+                            <div class="col-md-6">
+                                Buy Orders
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                Market history
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="chart-right-col pull-right">
+                            <img src="http://lorempixel.com/g/120/600/" alt="Banner 120x600">
+                        </div>
+                    </div>
+                    <!-- //End-->
+                </div>
+            </div>
+        </section>
+    </div><!--end wrapper-->
+</main>
+<footer class="footer">
+    <div class="container dash-navbar">
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">terms of use</a></li>
+                    <li><a href="#">add coin</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">faq</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="foot-banner-sm">
+                    <img src="assets/img/footer-baner_small.png" alt="COIN X PRO">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span class="foot-copyrights">&copy; 2015-2017 coinxpro</span>
+                <div class="chat-modal">
+                    open chat <span class="badge">3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/main.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
