@@ -16,8 +16,14 @@
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
+    <style>
+        html, body {
+            width: 1260px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-<body class="main" style="width: 1200px;">
+<body class="main">
 <header class="header">
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container dash-navbar">
@@ -138,23 +144,12 @@
                                 <p>0.00000000</p>
                             </div>
                         </div>
-                        <div class="m-coin-box">
-                            <div class="m-coin-box-left">
-                                <img src="assets/img/coin-box-img4.png" width="50" alt="Currency">
-                            </div>
-                            <div class="m-coin-box-right">
-                                <p><span>BTC_SURGE</span></p>
-                                <p>StarCash</p>
-                                <p>0.00000000</p>
-                            </div>
-                        </div>
-
                     </div>
                     <!-- //End -->
                 </div>
                 <div class="row">
                     <!-- Main market-content -->
-                    <div class="col-md-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3">
                         <div class="chart-left-col">
                             <div class="left-body-title">
                                 <div class="body-title-img">
@@ -186,7 +181,7 @@
                                 <p><span>USD Price</span><span class="pull-right">0,0065078430</span></p>
                                 <p><span>24h Volume USD</span><span class="pull-right">0,0065078430</span></p>
                                 <p><span>Available Supply</span><span class="pull-right">0,0065078430</span></p>
-                                <p><span>Change 1h|24|7d </span><span class="pull-right">0,0065078430</span></p>
+                                <p><span>Change 1h|24|7d </span><span class="pull-right"><em class="body-content__stats-green">0.53%|4.51%|-</em><em class="body-content__stats-red"> 12.45%</em></span></p>
                             </div>
                             <div class="left-body-icons">
                                 <div class="social-icon">
@@ -372,9 +367,9 @@
                             <img src="http://via.placeholder.com/300x250" alt="Your Banner">
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xs-8 col-sm-8 col-md-8">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="chart-body-top">
                                     <div class="chart-graph-box">
                                     </div>
@@ -382,37 +377,431 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="buy-sell-rpt">
-
+                                    <div class="input-group sell-rpt">
+                                        <input type="text" class="form-control" placeholder="price" aria-describedby="buy-rpt-price">
+                                        <span class="input-group-addon" id="buy-rpt-price">btc</span>
+                                    </div>
+                                    <div class="input-group sell-rpt">
+                                        <input type="text" class="form-control" placeholder="amount" aria-describedby="buy-rpt-amount">
+                                        <span class="input-group-addon" id="buy-rpt-amount">rpt</span>
+                                    </div>
+                                    <div class="input-group sell-rpt">
+                                        <input type="text" class="form-control" placeholder="total" aria-describedby="buy-rpt-total">
+                                        <span class="input-group-addon" id="buy-rpt-total">btc</span>
+                                    </div>
+                                    <div class="input-group sell-rpt">
+                                        <input type="text" class="form-control" placeholder="fee" aria-describedby="buy-rpt-fee">
+                                        <span class="input-group-addon" id="buy-rpt-fee">btc</span>
+                                    </div>
+                                    <div class="buy-rpt-curr">
+                                        <span class="buy-currency-name">btc</span>
+                                    </div>
+                                    <div class="buy-rpt-btn">
+                                        <button class="btn btn-success btn-buy">Buy RPT</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="buy-sell-rpt">
-
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="buy-sell-rpt right-side">
+                                    <div class="input-group sell-rpt">
+                                        <input type="text" class="form-control" placeholder="price" aria-describedby="sell-rpt-price">
+                                        <span class="input-group-addon" id="sell-rpt-price">btc</span>
+                                    </div>
+                                    <div class="input-group sell-rpt">
+                                        <input type="text" class="form-control" placeholder="amount" aria-describedby="sell-rpt-amount">
+                                        <span class="input-group-addon" id="sell-rpt-amount">rpt</span>
+                                    </div>
+                                    <div class="input-group sell-rpt">
+                                        <input type="text" class="form-control" placeholder="total" aria-describedby="sell-rpt-total">
+                                        <span class="input-group-addon" id="sell-rpt-total">btc</span>
+                                    </div>
+                                    <div class="input-group sell-rpt">
+                                        <input type="text" class="form-control" placeholder="fee" aria-describedby="sell-rpt-fee">
+                                        <span class="input-group-addon" id="sell-rpt-fee">btc</span>
+                                    </div>
+                                    <div class="buy-rpt-curr">
+                                        <span class="buy-currency-name">rpt</span>
+                                    </div>
+                                    <div class="buy-rpt-btn">
+                                        <button class="btn btn-danger btn-sell">Sell RPT</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
-                                Sell Orders
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="sell-orders__table">
+                                    <div class="table__title">
+                                        Sell orders
+                                    </div>
+                                    <div class="table__header">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>ASK(BTC)</th>
+                                                <th>Amount(PYY)</th>
+                                                <th>Value(BTC)</th>
+                                                <th>Total(BTC)</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="sell-orders__seperator"></div>
+                                    <div class="table__inline">
+                                        <table class="table sell-orders-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                Buy Orders
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="sell-orders__table right-buy">
+                                    <div class="table__title">
+                                        Buy orders
+                                    </div>
+                                    <div class="table__header">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>BID(BTC)</th>
+                                                <th>Amount(PYY)</th>
+                                                <th>Value(BTC)</th>
+                                                <th>Total(BTC)</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="sell-orders__seperator"></div>
+                                    <div class="table__inline">
+                                        <table class="table sell-orders-table">
+                                            <tbody>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                                <td>0.0000004535</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
-                                Market history
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="market-history__table">
+                                    <div class="market-history__table-title">
+                                        Market history
+                                    </div>
+                                    <div class="market-history__table-table">
+                                        <div class="table__inline">
+                                            <table class="table sell-orders-table market-history">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr class="line__up">
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>buy</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr class="line_down">
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>buy</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>buy</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2017-10-19 02:15</td>
+                                                        <td>sell</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                        <td>0.0000003525</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-xs-1 col-sm-1 col-md-1">
                         <div class="chart-right-col pull-right">
                             <img src="http://lorempixel.com/g/120/600/" alt="Banner 120x600">
                         </div>
                     </div>
                     <!-- //End-->
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="chart__legend">
+                            <div class="legend-title">
+                                btc/rpt<span>trading</span>
+                            </div>
+                            <div class="legend-text">
+                                BTC/RPT is the most popular trading pair on the cryptocurrency market. CoinxPro Bitcoin exchange provides a platform for effective trading, backed<br>
+                                by unique trade engine with advanced order-matching algorithms. High liquidity order book ensure execution of high-volume orders for BTC/RPT<br>
+                                and other currency pairs.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

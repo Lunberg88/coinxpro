@@ -248,7 +248,7 @@
 		cursor: pointer;
 		z-index: 10;
 
-		span {
+		/*span {
 			position: absolute;
 			top: -18%;
 			right: -6%;
@@ -257,6 +257,18 @@
 			padding: 2px 5px;
 			border: 2px solid #fff;
 			z-index: 99;
+		} */
+		span {
+			position: absolute;
+			font-size: 8px;
+			padding: 3px 5px;
+			top: -25%;
+			right: -5%;
+			background: #d46d69;
+			color: #fff;
+			border: 2px solid #fff;
+			z-index: 99;
+			border-radius: 50% !important
 		}
 	}
 }
