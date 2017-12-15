@@ -1,11 +1,12 @@
 .chart-board {
   width: 100%;
-  margin: -17px auto 20px;
+  margin: -30px auto 20px;
   padding: 10px 0;
 
   .active-box {
     background: #6FBD64;
     color: #fff !important;
+    border: 1px solid #6FBD64 !important;
     span {
       color: #fff !important;
     }
@@ -13,6 +14,7 @@
   .danger-box {
     background: #d46d69;
     color: #fff !important;
+    border: 1px solid #d46d69 !important;
     span {
       color: #fff !important;
     }
@@ -478,5 +480,56 @@
       padding-top: 10px;
       color: #3b3b3b;
     }
+  }
+}
+// Pop-up window //
+.popup__logout .modal-content {
+  width: 60%;
+  margin: auto;
+}
+
+.popup__logout .modal-content .popup__logout-title {
+  color: #2fcde7;
+  margin-bottom: 15px;
+}
+
+.popup__logout .modal-dialog .modal-content .popup__links {
+  .cancel {
+    color: #222222;
+    background: #fff;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    padding: 6px 25px;
+    border: 1px solid #222222;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-right: 15px;
+  }
+
+  .cancel:hover {
+    background: #eeeeee;
+    border: 1px solid #484848;
+    text-decoration: none;
+  }
+
+  .signin {
+    color: #fff;
+    background: #2fcde7;
+    padding: 6px 35px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    border: 1px solid #2fcde7;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .signin:hover {
+    background: #2baec8;
+    border: 1px solid #2baec8;
+    text-decoration: none;
   }
 }

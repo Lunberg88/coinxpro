@@ -1,26 +1,28 @@
 html {
-  height: 100%;
   width: 100%;
   font-size: 16px; }
 
 body {
-  height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: #000;
   background: #fff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-height: 100vh !important; }
 
 img {
   max-width: 100%; }
+
+main {
+  min-height: 100vh; }
 
 @media (max-width: 420px) {
   .navbar-default .header-buttons .active, .navbar-default .header-buttons .active:hover, .navbar-default .header-buttons .default, .navbar-default .header-buttons .default:hover {
     margin: 0 15px 10px !important; } }
 
 .header .navbar-default {
-  background: #ebebeb !important;
-  border-bottom: 1px solid #d0d0d0 !important; }
+  background: #fff !important;
+  border-bottom: 0 !important; }
   .header .navbar-default .navbar-header, .header .navbar-default .img-logo {
     font-family: "Open Sans", sans-serif !important; }
 
@@ -178,17 +180,7 @@ img {
     right: 1%;
     bottom: -130%;
     cursor: pointer;
-    z-index: 10;
-    /*span {
-			position: absolute;
-			top: -18%;
-			right: -6%;
-			background: #d46d69;
-			color: #fff;
-			padding: 2px 5px;
-			border: 2px solid #fff;
-			z-index: 99;
-		} */ }
+    z-index: 10; }
     .footer .chat-modal span {
       position: absolute;
       font-size: 8px;
@@ -238,7 +230,8 @@ img {
   .acc-links li:nth-child(2) {
     margin-top: -10px !important; }
   .acc-links .my-acc {
-    margin: auto; }
+    margin: auto;
+    padding-top: 5px; }
     .acc-links .my-acc a, .acc-links .my-acc a:active, .acc-links .my-acc a:link, .acc-links .my-acc a:visited {
       font-size: 14px;
       color: #2fcde7;
@@ -457,16 +450,6 @@ img {
   .my-acc-resetpass .nav-tabs .active > a {
     color: #00b3ee; }
   .my-acc-resetpass .nav-tabs .badge, .my-acc-resetpass .nav-tabs .active .badge {
-    /*
-    position: absolute;
-    right: -5%;
-    top: -15%;
-    padding: 3px 5px;
-    font-size: 8px;
-    background: #d50000;
-    border-color: #fff;
-    border-radius: 50%;
-    */
     position: relative;
     font-size: 8px;
     padding: 3px 5px;
@@ -720,14 +703,6 @@ img {
     list-style: none;
     padding-right: 5px; }
     .my-acc-resetpass .tabnav li .badge {
-      /*
-      position: relative;
-      top: -15px;
-      right: 10px;
-      border: 1px solid #fff;
-      background: #d46d69;
-      padding: 2px 5px;
-      */
       position: relative;
       font-size: 8px;
       padding: 3px 5px;
@@ -740,6 +715,198 @@ img {
       border-radius: 50% !important; }
   .my-acc-resetpass .widget div.tab-content {
     text-align: center; }
+  .my-acc-resetpass .widget div.tab-content__seperator {
+    height: 1px;
+    padding: 15px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box {
+    width: 100%;
+    padding: 0; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-left,
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    vertical-align: middle; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-left {
+    text-align: left;
+    padding-top: 5px;
+    font-size: 16px;
+    color: #3b3b3b;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right {
+    text-align: right;
+    padding-top: 5px; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right form {
+      margin-top: -6px;
+      width: 70%; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right form input[name='search_value'] {
+      position: relative;
+      width: 100%;
+      border: 1px solid #cfcfcf;
+      border-radius: 2px;
+      padding: 5px 12px 5px 45px;
+      background: url("../assets/img/search-main-icon.svg") no-repeat;
+      background-position: 3px 0px;
+      background-size: contain; }
+      .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right form input[name='search_value']::placeholder {
+        color: #cdcdcd;
+        text-align: center; }
+      .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right form input[name='search_value']:focus {
+        outline: none;
+        border-bottom: 1px solid #2fcde7; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a, .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:active, .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:visited, .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:link {
+      background: #2fcde7;
+      color: #fff;
+      border: 1px solid #2fcde7;
+      border-radius: 3px;
+      padding: 6px 30px;
+      text-decoration: none; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--content {
+    width: 100%;
+    margin: 30px auto 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    padding: 0; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--content .balances__table__header {
+    background: #f4f4f4;
+    padding: 10px 15px 5px;
+    color: #3b3b3b;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content {
+    padding-right: 15px;
+    position: relative; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table {
+    height: 660px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > thead {
+    width: 100%; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .balance--window {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    z-index: 99; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .window--hidden {
+    display: none; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .window--open {
+    display: block; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .balance--window .close-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 15px;
+    font-size: 22px;
+    font-stretch: ultra-expanded;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--top {
+    position: relative; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--title {
+    padding-top: 30px;
+    font-size: 14px;
+    color: #3b3b3b;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body {
+    padding: 35px 50px 15px;
+    text-align: left;
+    /*.content-style {
+        position: relative;
+        width: 80%;
+        padding: 3px 0 3px 35px;
+        vertical-align: middle;
+        img {
+          position: absolute;
+          width: 110px;
+          top: 0;
+          right: 0;
+        }
+      }*/ }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body img {
+      width: 110px; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .qrcode--title {
+      padding: 0 40px 55px;
+      color: #d7d7d7; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .qrcode--adress {
+      margin: 10px auto; }
+      .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .qrcode--adress .input-group-addon {
+        padding: 8px 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        background-color: #f7f7f7;
+        cursor: pointer; }
+      .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .qrcode--adress .input-group-addon:first-child {
+        cursor: default;
+        border-radius: 3px 0 0 3px; }
+      .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .qrcode--adress .input-group-addon:last-child {
+        border-radius: 0 3px 3px 0; }
+      .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .qrcode--adress input {
+        height: 40px;
+        border-right: 0; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .body__content {
+      margin-bottom: 50px;
+      vertical-align: top;
+      color: #3b3b3b; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .list-style, .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .content-style {
+      display: inline-block;
+      margin-bottom: 45px;
+      color: #3b3b3b; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .list-style span {
+      border: 1px solid #2fcde7;
+      padding: 5px 12px;
+      border-radius: 50%;
+      color: #2fcde7;
+      font-size: 17px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody tr {
+    width: 99%; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody tr:nth-child(even) {
+    background-color: #f4f4f4; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td:first-child {
+    text-align: left;
+    text-transform: uppercase; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td:nth-child(2) {
+    text-align: left;
+    padding-left: 0;
+    font-size: 11px;
+    text-transform: capitalize; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td:nth-child(3) {
+    padding-left: 0; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td:nth-child(7) {
+    padding-right: 0;
+    text-align: right; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td:last-child {
+    padding-left: 0; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td {
+    font-size: 13px;
+    color: #3b3b3b; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td img {
+    width: 15px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td button.balance-btn-deposit, .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td button.balance-btn-drwl, .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td button.balance-btn-stu {
+    padding: 6px 15px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td button.balance-btn-deposit {
+    background-color: #2fcde7;
+    color: #fff;
+    border: 1px solid #2fcde7;
+    border-radius: 2px;
+    padding-left: 25px;
+    padding-right: 25px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td button.balance-btn-drwl {
+    background-color: #6FBD64;
+    color: #fff;
+    border: 1px solid #6FBD64;
+    border-radius: 2px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td button.balance-btn-stu {
+    background-color: #fff;
+    border: 1px solid #3b3b3b;
+    border-radius: 2px;
+    color: #3b3b3b; }
   .my-acc-resetpass .tabnav li a {
     text-decoration: none;
     text-transform: capitalize;
@@ -1114,11 +1281,12 @@ img {
       border-radius: 2px; }
       .tfa-dis .rp-info_text .label-button-acc .badge {
         position: absolute;
+        font-size: 8px;
         top: -18%;
         right: -6%;
         background: #d46d69;
         border: 2px solid #fff;
-        padding: 2px 6px; }
+        padding: 3px 5px; }
     .tfa-dis .rp-info_text .btt-red {
       background: #d46d69;
       padding: 14px 5px !important; }
@@ -1385,14 +1553,17 @@ img {
 
 .market-content .market-top-coin-boxes div {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding-right: 7px; }
+  .market-content .market-top-coin-boxes div img {
+    padding-bottom: 10px; }
 
 .market-content .market-top-coin-boxes .m-coin-box {
   border: 1px solid #cfcfcf;
   border-radius: 2px;
-  padding: 10px 20px 5px 5px;
+  padding: 10px 10px 0 10px;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #5e5e5e;
   text-align: left;
   margin-right: 9px;
@@ -1407,7 +1578,7 @@ img {
   line-height: 10px; }
 
 .market-content .market-top-coin-boxes .m-coin-box span {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #3c3c3c; }
 
@@ -1448,17 +1619,6 @@ img {
   border-color: #3b5998; }
 
 .market-content .market-inputs-row .market-social-icons .fa .badge {
-  /*
-  position: relative;
-  top: -15px;
-  right: -10px;
-  font-size: 8px;
-  color: #fff;
-  background: #d46d69;
-  padding: 1px 3px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  */
   position: relative;
   font-size: 8px;
   padding: 3px 5px;
@@ -1505,65 +1665,6 @@ img {
   .market-content .market-inputs-row .market-link-btns .lnk-support:hover {
     background: #5fa656; }
 
-/*
-.market-content .market-main-content, .market-content .market-right-col {
-  width: 100%;
-  margin: 20px auto;
-  border-radius: 2px;
-  padding: 2px 4px;
-}
-
-.market-content .market-main-content table.market-tab {
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.market-content .market-main-content .market-tab thead tr th > img[alt="Sort"] {
-  transform: rotate(90deg);
-  padding-left: 8px;
-  padding-top: 0;
-  width: 30px;
-  height: 20px;
-  vertical-align: top;
-  cursor: pointer;
-}
-
-.market-content .market-main-content .market-tab thead {
-  background: #efefef;
-  color: #3c3c3c;
-  font-family: "Open Sans", sans-serif;
-  th {
-    border: none;
-    font-weight: 600;
-  }
-}
-
-.market-content .market-main-content .market-tab tbody {
-  color: #3c3c3c;
-  font-size: 13px;
-  height: 450px !important;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  resize: none;
-}
-
-.market-content .market-main-content .market-tab tbody tr > td {
-  border: none;
-}
-
-.market-content .market-main-content .market-tab tbody tr > td:first-child,
-.market-content .market-main-content .market-tab tbody tr.active > td:first-child {
-  color: #2fcde7;
-}
-
-.market-content .market-main-content .market-tab tbody tr > td:nth-child(4) {
-  color: #6FBD64;
-}
-
-.market-content .market-main-content .market-tab tbody tr.active > td:nth-child(4) {
-  color: #d46d69;
-}
-*/
 .market-main-content {
   margin-top: 15px;
   /* decorations */ }
@@ -1675,16 +1776,18 @@ img {
 
 .chart-board {
   width: 100%;
-  margin: -17px auto 20px;
+  margin: -30px auto 20px;
   padding: 10px 0; }
   .chart-board .active-box {
     background: #6FBD64;
-    color: #fff !important; }
+    color: #fff !important;
+    border: 1px solid #6FBD64 !important; }
     .chart-board .active-box span {
       color: #fff !important; }
   .chart-board .danger-box {
     background: #d46d69;
-    color: #fff !important; }
+    color: #fff !important;
+    border: 1px solid #d46d69 !important; }
     .chart-board .danger-box span {
       color: #fff !important; }
   .chart-board .chart-left-col {
@@ -1992,3 +2095,46 @@ img {
     .chart-board .chart__legend .legend-text {
       padding-top: 10px;
       color: #3b3b3b; }
+
+.popup__logout .modal-content {
+  width: 60%;
+  margin: auto; }
+
+.popup__logout .modal-content .popup__logout-title {
+  color: #2fcde7;
+  margin-bottom: 15px; }
+
+.popup__logout .modal-dialog .modal-content .popup__links .cancel {
+  color: #222222;
+  background: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 6px 25px;
+  border: 1px solid #222222;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 15px; }
+
+.popup__logout .modal-dialog .modal-content .popup__links .cancel:hover {
+  background: #eeeeee;
+  border: 1px solid #484848;
+  text-decoration: none; }
+
+.popup__logout .modal-dialog .modal-content .popup__links .signin {
+  color: #fff;
+  background: #2fcde7;
+  padding: 6px 35px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border: 1px solid #2fcde7;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: capitalize; }
+
+.popup__logout .modal-dialog .modal-content .popup__links .signin:hover {
+  background: #2baec8;
+  border: 1px solid #2baec8;
+  text-decoration: none; }

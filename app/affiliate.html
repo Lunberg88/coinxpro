@@ -47,7 +47,7 @@
         <section class="my-acc-resetpass">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
                         <div>
                             <!-- -->
                             <div id="tabvanilla" class="widget">
@@ -59,9 +59,7 @@
                                     <li><a href="#affiliate">Affiliate</a><span class="badge">3</span></li>
                                 </ul>
                                 <div id="settings" class="tabdiv">
-                                    <div class="tab-content">
-                                        <p><span class="menu-title">Settings</span></p>
-                                    </div>
+                                    <div class="tab-content__seperator"></div>
                                     <div class="tab-content">
                                         <!-- My account sub-menu -->
                                         <div id="tabvanilla-1" class="widget">
@@ -410,8 +408,330 @@
                                     </div>
                                 </div>
                                 <div id="funds" class="tabdiv">
+                                    <div class="tab-content__seperator"></div>
                                     <div class="tab-content">
-                                        <p><span class="menu-title">Funds page</span></p>
+                                        <div id="tabvanilla-6" class="widget">
+                                            <ul class="tabnav">
+                                                <li><a href="#balances">Balances</a></li>
+                                                <li><a href="#withdrawal-history">Withdrawal history</a></li>
+                                                <li><a href="#deposit-history">Deposit history</a></li>
+                                                <li><a href="#ongoing-tr">Ongoing transcription</a></li>
+                                            </ul>
+                                            <div id="balances" class="active">
+                                                <div class="tab-content__seperator"></div>
+                                                <div class="tab-content">
+                                                    <p><span class="menu-title">Account Balances</span></p>
+                                                </div>
+                                                <div class="tab-content__seperator"></div>
+                                                <div class="tab-content">
+                                                    <div class="balances--main__box">
+                                                        <div class="balances--header">
+                                                            <div class="row">
+                                                                <div class="col-sm-5 col-md-5">
+                                                                    <div class="balances--header-left">
+                                                                        Total Value: 0.0000000000 BTC
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-7 col-md-7">
+                                                                    <div class="balances--header-right">
+                                                                        <form action="#" method="get" name="balances-search" class="pull-left">
+                                                                            <input type="text" name="search_value" placeholder="Search">
+                                                                        </form>
+                                                                        <a href="#hide-zero">Hide zero balances</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="market-main-content">
+                                                            <div id="deposit-frame" class="balance--window window--hidden ui-widget-content ui-corner-all">
+                                                                <div class="deposit--window--box">
+                                                                    <div class="deposit--top">
+                                                                        <span class="close-btn pull-right"><img src="assets/img/close-modal-img.svg" width="20" alt="close"></span>
+                                                                    </div>
+                                                                    <div class="deposit--title">
+                                                                        <span class="insert-title"></span>
+                                                                        <span>Please fill in the address and amount, then submit the form. It will be</span><br>
+                                                                        <span>confirmed in 10 minutes.</span>
+                                                                    </div>
+                                                                    <div class="deposit--body">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-1 col-md-1">
+                                                                                <div class="list-style">
+                                                                                    <span>1</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-11 col-md-11">
+                                                                                <div class="content-style">
+                                                                                    Please use your common wallet services, locale wallet, mobile terminal or<br>
+                                                                                    online wallet, select a payment and send.
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-1 col-md-1">
+                                                                                <div class="list-style">
+                                                                                    <span>2</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-9 col-md-9">
+                                                                                <div class="content-style">
+                                                                                    Please paste the address below in your wallet, and fill in the amount<br>your wont to deposit, then confirm and send.
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-2 col-md-2">
+                                                                                <img src="assets/img/tfa_qr_code_img.png" alt="QR-code">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-1 col-md-1"></div>
+                                                                            <div class="col-sm-11 col-md-11">
+                                                                                <div class="input-group qrcode--adress">
+                                                                                    <div class="input-group-addon">Address</div>
+                                                                                    <input type="text" class="form-control" id="qr-code-gen" placeholder="7168d25d3dc2b597dc63a34732179911">
+                                                                                    <div class="input-group-addon"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+                                                                                    <div class="input-group-addon">New Address</div>
+                                                                                </div>
+                                                                                <div class="qrcode--title">Scanning QR code to Pay for in the mobile terminal wallet.</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-1">
+                                                                                <div class="list-style">
+                                                                                    <span>3</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-11">
+                                                                                <div class="content-style">
+                                                                                    Once you complete sending, you can check the status of your new<br>
+                                                                                    deposit below.
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="drwl-frame" class="balance--window window--hidden ui-widget-content ui-corner-all">
+                                                                <div class="deposit--window--box">
+                                                                    <div class="deposit--top">
+                                                                        <span class="close-btn pull-right"><img src="assets/img/close-modal-img.svg" width="20" alt="close"></span>
+                                                                    </div>
+                                                                    <div class="deposit--title">
+                                                                        <span class="insert-title"></span>
+                                                                        <span>Please fill in the address and amount, then submit the form. It will be</span><br>
+                                                                        <span>confirmed in 10 minutes.</span>
+                                                                    </div>
+                                                                    <div class="deposit--body">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Market table -->
+                                                            <table>
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>Code</th>
+                                                                    <th>Name</th>
+                                                                    <th>Status</th>
+                                                                    <th>Available balance</th>
+                                                                    <th>In trades</th>
+                                                                    <th>BTC Value</th>
+                                                                    <th colspan="3"></th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>btc</td>
+                                                                        <td><img src="assets/img/4.png" alt="Bitcoin"> bitcoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="btc">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="btc">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="btc">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>ltc</td>
+                                                                        <td><img src="assets/img/12.png" alt="Litecoin"> litecoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="ltc">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="ltc">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="ltc">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>uno</td>
+                                                                        <td><img src="assets/img/6.png" alt="Unobtanium"> unobtanium</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="uno">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="uno">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="uno">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>doge</td>
+                                                                        <td><img src="assets/img/7.png" alt="Dogecoin"> dogecoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="doge">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="doge">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="doge">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>cobo</td>
+                                                                        <td><img src="assets/img/10.png" alt="Cobocoin"> cobocoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="cobo">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="cobo">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="cobo">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>dgc</td>
+                                                                        <td><img src="assets/img/9.png" alt="Digitalcoin"> digitalcoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="dgc">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="dgc">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="dgc">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>mec</td>
+                                                                        <td><img src="assets/img/3.png" alt="Megacoin"> megacoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="mec">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="mec">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="mec">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>bigup</td>
+                                                                        <td><img src="assets/img/5.png" alt="Bigup"> bigup</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="bigup">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="bigup">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="bigup">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>koruna</td>
+                                                                        <td><img src="assets/img/13.png" alt="CzechoSlovak Koruna"> czechoSlovak koruna</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="koruna">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="koruna">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="koruna">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>xxx</td>
+                                                                        <td><img src="assets/img/8.png" alt="XxXCoin"> xxxcoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="xxx">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="xxx">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="xxx">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>DBIG</td>
+                                                                        <td><img src="assets/img/4.png" alt="Dubaicoin"> Dubaicoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="dbig">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="dbig">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="dbig">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>xbu</td>
+                                                                        <td><img src="assets/img/1.png" alt="Ubercoin"> ubercoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="xbu">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="xbu">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="xbu">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>post</td>
+                                                                        <td><img src="assets/img/2.png" alt="Postcoin"> postcoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="post">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="post">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="post">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>uno</td>
+                                                                        <td><img src="assets/img/6.png" alt="Unobtanium"> unobtanium</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="uno">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="uno">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="uno">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>doge</td>
+                                                                        <td><img src="assets/img/7.png" alt="Dogecoin"> dogecoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="doge">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="doge">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="doge">Send to user</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>cobo</td>
+                                                                        <td><img src="assets/img/10.png" alt="Cobocoin"> cobocoin</td>
+                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00666000</td>
+                                                                        <td>0.00000000</td>
+                                                                        <td><button class="balance-btn-deposit" data-target="deposit-frame"  data-title="cobo">Deposit</button></td>
+                                                                        <td><button class="balance-btn-drwl" data-target="drwl-frame"  data-title="cobo">Withdrawal</button></td>
+                                                                        <td><button class="balance-btn-stu" data-target="stu-frame"  data-title="cobo">Send to user</button></td>
+                                                                    </tr>
+                                                            </table>
+                                                            <!-- //End -->
+                                                        </div>
+                                                        <div class="balances--tooltips"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="withdrawal-history" class="active">
+                                                <div class="tab-content">Withdrawal history</div>
+                                            </div>
+                                            <div id="deposit-history" class="active">
+                                                <div class="tab-content">Deposit history</div>
+                                            </div>
+                                            <div id="ongoing-tr" class="active">
+                                                <div class="tab-content">Ongoing transcription</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div id="history" class="tabdiv">
@@ -425,9 +745,7 @@
                                     </div>
                                 </div>
                                 <div id="affiliate" class="tabdiv">
-                                    <div class="tab-content">
-                                        <p><span class="menu-title">Affiliate</span></p>
-                                    </div>
+                                    <div class="tab-content__seperator"></div>
                                     <div class="tab-content">
                                         <!-- Affiliate sub-menu -->
                                         <div id="tabvanilla-5" class="widget">
@@ -725,7 +1043,7 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12">
                 <ul>
                     <li><a href="#">home</a></li>
                     <li><a href="#">privacy policy</a></li>
@@ -737,14 +1055,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="foot-banner-sm">
                     <img src="assets/img/footer-baner_small.png" alt="COIN X PRO">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12">
                 <span class="foot-copyrights">&copy; 2015-2017 coinxpro</span>
                 <div class="chat-modal">
                     open chat <span class="badge">3</span>

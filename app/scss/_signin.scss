@@ -1,7 +1,7 @@
 .header {
 	.navbar-default {
-		background: #ebebeb !important;
-		border-bottom: 1px solid #d0d0d0 !important;
+		background: #fff !important;
+		border-bottom: 0 !important;
 		.navbar-header, .img-logo {
 			font-family: "Open Sans", sans-serif !important;
 		}
@@ -248,16 +248,6 @@
 		cursor: pointer;
 		z-index: 10;
 
-		/*span {
-			position: absolute;
-			top: -18%;
-			right: -6%;
-			background: #d46d69;
-			color: #fff;
-			padding: 2px 5px;
-			border: 2px solid #fff;
-			z-index: 99;
-		} */
 		span {
 			position: absolute;
 			font-size: 8px;

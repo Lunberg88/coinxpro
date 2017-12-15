@@ -16,6 +16,9 @@ $(function() {
     $('#tabvanilla-5 > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
     $('#featuredvid-5 > ul').tabs();
 
+    $('#tabvanilla-6 > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
+    $('#featuredvid-6 > ul').tabs();
+
     var imh = $('a[href="#markets"]');
     imh.hover(function() {
         $('img[src="assets/img/img-market.svg"]').attr('src', 'assets/img/img-markets-on.svg');

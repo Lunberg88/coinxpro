@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Charts</title>
+    <title>Charts Pop-up</title>
     <!-- build:css css/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -838,6 +838,23 @@
         </div>
     </div>
 </footer>
+<div id="myModal-tfa" class="modal fade popup__logout">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="modal-title-sec popup__logout-title">Do you really want to sign out?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer popup__links">
+                <a href="#" class="cancel" data-dismiss="modal">cancel</a>
+                <a href="logout.html" class="signin">Yes</a>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- build:js js/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -848,6 +865,11 @@
 <!-- endbuild -->
 
 <!-- build:js js/main.js -->
+<script>
+    $(function() {
+        $("#myModal-tfa").modal('show');
+    });
+</script>
 <script src="js/main.js"></script>
 <!-- endbuild -->
 </body>

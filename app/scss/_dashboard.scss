@@ -36,14 +36,18 @@
 .market-content .market-top-coin-boxes div {
   display: inline-block;
   vertical-align: middle;
+  padding-right: 7px;
+  img {
+    padding-bottom: 10px;
+  }
 }
 
 .market-content .market-top-coin-boxes .m-coin-box {
   border: 1px solid #cfcfcf;
   border-radius: 2px;
-  padding: 10px 20px 5px 5px;
+  padding: 10px 10px 0 10px;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #5e5e5e;
   text-align: left;
   margin-right: 9px;
@@ -62,7 +66,7 @@
 }
 
 .market-content .market-top-coin-boxes .m-coin-box span {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #3c3c3c;
 }
@@ -112,17 +116,6 @@
 }
 
 .market-content .market-inputs-row .market-social-icons .fa .badge {
-  /*
-  position: relative;
-  top: -15px;
-  right: -10px;
-  font-size: 8px;
-  color: #fff;
-  background: #d46d69;
-  padding: 1px 3px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  */
   position: relative;
   font-size: 8px;
   padding: 3px 5px;
@@ -180,67 +173,6 @@
 ////////////////
 // My Tables //
 ///////////////
-
-/*
-.market-content .market-main-content, .market-content .market-right-col {
-  width: 100%;
-  margin: 20px auto;
-  border-radius: 2px;
-  padding: 2px 4px;
-}
-
-.market-content .market-main-content table.market-tab {
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.market-content .market-main-content .market-tab thead tr th > img[alt="Sort"] {
-  transform: rotate(90deg);
-  padding-left: 8px;
-  padding-top: 0;
-  width: 30px;
-  height: 20px;
-  vertical-align: top;
-  cursor: pointer;
-}
-
-.market-content .market-main-content .market-tab thead {
-  background: #efefef;
-  color: #3c3c3c;
-  font-family: "Open Sans", sans-serif;
-  th {
-    border: none;
-    font-weight: 600;
-  }
-}
-
-.market-content .market-main-content .market-tab tbody {
-  color: #3c3c3c;
-  font-size: 13px;
-  height: 450px !important;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  resize: none;
-}
-
-.market-content .market-main-content .market-tab tbody tr > td {
-  border: none;
-}
-
-.market-content .market-main-content .market-tab tbody tr > td:first-child,
-.market-content .market-main-content .market-tab tbody tr.active > td:first-child {
-  color: #2fcde7;
-}
-
-.market-content .market-main-content .market-tab tbody tr > td:nth-child(4) {
-  color: #6FBD64;
-}
-
-.market-content .market-main-content .market-tab tbody tr.active > td:nth-child(4) {
-  color: #d46d69;
-}
-*/
-
 .market-main-content {
   margin-top: 15px;
 
@@ -312,7 +244,6 @@
     }
   }
 }
-
 ///////////////////
 // Right Column //
 //////////////////
@@ -373,8 +304,7 @@
   color: #3c3c3c;
   padding-bottom: 10px;
 }
-.market-content .market-right-col .market-right-box .coin-right-box .box-text
-{
+.market-content .market-right-col .market-right-box .coin-right-box .box-text {
   padding-top: 15px;
   font-size: 14px;
   color: #3c3c3c;
