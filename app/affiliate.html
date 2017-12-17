@@ -58,6 +58,7 @@
                                     <li><a href="#ticket">Ticket</a><span class="badge">3</span></li>
                                     <li><a href="#affiliate">Affiliate</a><span class="badge">3</span></li>
                                 </ul>
+                                <!-- Settings page -->
                                 <div id="settings" class="tabdiv">
                                     <div class="tab-content__seperator"></div>
                                     <div class="tab-content">
@@ -69,6 +70,7 @@
                                                 <li><a href="#tfa">Two-Factor Authentication</a></li>
                                                 <li><a href="#dis-tfa">Disable Two-Factor Authentication</a></li>
                                             </ul>
+                                            <!-- Account main page -->
                                             <div id="main">
                                                 <div class="tab-content">
                                                     <div class="row">
@@ -211,6 +213,8 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- //Main -->
+                                            <!-- Account reset password page -->
                                             <div id="reset-pass">
                                                 <div class="tab-content">
                                                     <div class="row">
@@ -259,6 +263,8 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- //Reset password -->
+                                            <!-- Account Two-Factor Authentication -->
                                             <div id="tfa">
                                                 <div class="tab-content">
                                                     <div class="row">
@@ -350,6 +356,8 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- //TFA -->
+                                            <!-- Account Disable Two-Authentication -->
                                             <div id="dis-tfa">
                                                 <div class="tab-content">
                                                     <div class="row">
@@ -403,10 +411,13 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- //Disable TFA -->
                                         </div>
                                         <!-- end sub-menu -->
                                     </div>
                                 </div>
+                                <!-- //Settings -->
+                                <!-- Funds page -->
                                 <div id="funds" class="tabdiv">
                                     <div class="tab-content__seperator"></div>
                                     <div class="tab-content">
@@ -489,7 +500,7 @@
                                                                                     <div class="input-group-addon">Address</div>
                                                                                     <input type="text" class="form-control" id="qr-code-gen" placeholder="7168d25d3dc2b597dc63a34732179911">
                                                                                     <div class="input-group-addon"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
-                                                                                    <div class="input-group-addon">New Address</div>
+                                                                                    <div class="input-group-addon" data-toggle="modal" data-target="#myModal-tfa">New Address</div>
                                                                                 </div>
                                                                                 <div class="qrcode--title">Scanning QR code to Pay for in the mobile terminal wallet.</div>
                                                                             </div>
@@ -521,7 +532,57 @@
                                                                         <span>confirmed in 10 minutes.</span>
                                                                     </div>
                                                                     <div class="deposit--body">
-
+                                                                        <form action="#" method="get" class="withdrawal--window">
+                                                                            <div class="row drwl-row">
+                                                                                <div class="col-sm-3 col-md-3">
+                                                                                    <span class="drwl-form-label">Label</span>
+                                                                                </div>
+                                                                                <div class="col-sm-9 col-md-9">Manage address</div>
+                                                                            </div>
+                                                                            <div class="row drwl-row">
+                                                                                <div class="col-sm-3 col-md-3">
+                                                                                    <span class="drwl-form-label">Balance</span>
+                                                                                </div>
+                                                                                <div class="col-sm-9 col-md-9">0.0</div>
+                                                                            </div>
+                                                                            <div class="row drwl-row">
+                                                                                <div class="col-sm-3 col-md-3">
+                                                                                    <span class="drwl-form-label input-label">Amount</span>
+                                                                                </div>
+                                                                                <div class="col-sm-7 col-md-7">
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" class="form-control drwl-inputs" id="amount" placeholder="At least 0.0001">
+                                                                                        <div class="input-group-addon drwl-addon">Withdraw all</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-2 col-md-2"><a href="#" class="about-fee">About Fee</a></div>
+                                                                            </div>
+                                                                            <div class="row drwl-row">
+                                                                                <div class="col-sm-3 col-md-3">
+                                                                                    <span class="drwl-form-label">Fee</span>
+                                                                                </div>
+                                                                                <div class="col-sm-9 col-md-9">0.0073634</div>
+                                                                            </div>
+                                                                            <div class="row drwl-row">
+                                                                                <div class="col-sm-3 col-md-3">
+                                                                                    <span class="drwl-form-label input-label">Google Authentication</span>
+                                                                                </div>
+                                                                                <div class="col-sm-7 col-md-7">
+                                                                                    <div class="inputs-row">
+                                                                                        <input type="text" class="form-control drwl-inputs" placeholder="6-digits password">
+                                                                                        <p class="google-auth-tip">
+                                                                                            Google Authentication will re-generate a new password every thirty seconds, please input timely.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-2 col-md-2"></div>
+                                                                            </div>
+                                                                            <div class="row drwl-row">
+                                                                                <div class="col-sm-2 col-sm-offset-3">
+                                                                                    <a href="#" class="default">Submit</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -542,7 +603,8 @@
                                                                     <tr>
                                                                         <td>btc</td>
                                                                         <td><img src="assets/img/4.png" alt="Bitcoin"> bitcoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -553,7 +615,8 @@
                                                                     <tr>
                                                                         <td>ltc</td>
                                                                         <td><img src="assets/img/12.png" alt="Litecoin"> litecoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-tools"><img
+                                                                                src="assets/img/icon-tool-status.svg" alt="In process"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -564,7 +627,8 @@
                                                                     <tr>
                                                                         <td>uno</td>
                                                                         <td><img src="assets/img/6.png" alt="Unobtanium"> unobtanium</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-tools"><img
+                                                                                src="assets/img/icon-maint-status.svg" alt="Maintence"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -575,7 +639,8 @@
                                                                     <tr>
                                                                         <td>doge</td>
                                                                         <td><img src="assets/img/7.png" alt="Dogecoin"> dogecoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-deliv"><img
+                                                                                src="assets/img/icon-car-status.svg" alt="Delivery"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -586,7 +651,8 @@
                                                                     <tr>
                                                                         <td>cobo</td>
                                                                         <td><img src="assets/img/10.png" alt="Cobocoin"> cobocoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -597,7 +663,8 @@
                                                                     <tr>
                                                                         <td>dgc</td>
                                                                         <td><img src="assets/img/9.png" alt="Digitalcoin"> digitalcoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -608,7 +675,8 @@
                                                                     <tr>
                                                                         <td>mec</td>
                                                                         <td><img src="assets/img/3.png" alt="Megacoin"> megacoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -619,7 +687,8 @@
                                                                     <tr>
                                                                         <td>bigup</td>
                                                                         <td><img src="assets/img/5.png" alt="Bigup"> bigup</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -630,7 +699,8 @@
                                                                     <tr>
                                                                         <td>koruna</td>
                                                                         <td><img src="assets/img/13.png" alt="CzechoSlovak Koruna"> czechoSlovak koruna</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -641,7 +711,8 @@
                                                                     <tr>
                                                                         <td>xxx</td>
                                                                         <td><img src="assets/img/8.png" alt="XxXCoin"> xxxcoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -652,7 +723,8 @@
                                                                     <tr>
                                                                         <td>DBIG</td>
                                                                         <td><img src="assets/img/4.png" alt="Dubaicoin"> Dubaicoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -663,7 +735,8 @@
                                                                     <tr>
                                                                         <td>xbu</td>
                                                                         <td><img src="assets/img/1.png" alt="Ubercoin"> ubercoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -674,7 +747,8 @@
                                                                     <tr>
                                                                         <td>post</td>
                                                                         <td><img src="assets/img/2.png" alt="Postcoin"> postcoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -685,7 +759,8 @@
                                                                     <tr>
                                                                         <td>uno</td>
                                                                         <td><img src="assets/img/6.png" alt="Unobtanium"> unobtanium</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -696,7 +771,8 @@
                                                                     <tr>
                                                                         <td>doge</td>
                                                                         <td><img src="assets/img/7.png" alt="Dogecoin"> dogecoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -707,7 +783,8 @@
                                                                     <tr>
                                                                         <td>cobo</td>
                                                                         <td><img src="assets/img/10.png" alt="Cobocoin"> cobocoin</td>
-                                                                        <td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+                                                                        <td><i class="ico ico-checked"><img
+                                                                                src="assets/img/icon-checked-status.svg" alt="Checked"></i></td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00666000</td>
                                                                         <td>0.00000000</td>
@@ -718,32 +795,507 @@
                                                             </table>
                                                             <!-- //End -->
                                                         </div>
-                                                        <div class="balances--tooltips"></div>
+                                                        <div class="balances--tooltips">
+                                                            <p>
+                                                                <i class="ico ico-checked"><img src="assets/img/icon-checked-status.svg" alt="Checked"></i> All OK
+                                                            </p>
+                                                            <p>
+                                                                <i class="ico ico-tools"><img src="assets/img/icon-tool-status.svg" alt="In process"></i> Wallet in maintenance
+                                                            </p>
+                                                            <p>
+                                                                <i class="ico ico-tools"><img src="assets/img/icon-maint-status.svg" alt="Maintence"></i> Wallet cannot be contacted, will restart shortly
+                                                            </p>
+                                                            <p>
+                                                                <i class="ico ico-deliv"><img src="assets/img/icon-car-status.svg" alt="Delivery"></i> This coin will be delisted soon, withdraw your counts
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div id="withdrawal-history" class="active">
-                                                <div class="tab-content">Withdrawal history</div>
+                                                <div class="tab-content__seperator"></div>
+                                                <div class="tab-content">
+                                                    <p><span class="menu-title">Get Withdrawal History</span></p>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="stats-page pull-left">
+                                                        <div class="container pull-left drawal--history">
+                                                            <ul class="nav nav-pills">
+                                                                <li class="active"><a data-toggle="pill" href="#drawal-daily"  class="lnk-active">Daily</a></li>
+                                                                <li><a data-toggle="pill" href="#drawal-monthly" class="lnk-inactive">Monthly</a></li>
+                                                            </ul>
+
+                                                            <div class="tab-content">
+                                                                <div id="drawal-daily" class="tab-pane fade in active">
+                                                                    <div class="drawal--history__box">
+                                                                        <div class="box__title">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-4 col-md-4">Date</div>
+                                                                                <div class="col-sm-2 col-md-2">Amount</div>
+                                                                                <div class="col-sm-2 col-md-2">Balance</div>
+                                                                                <div class="col-sm-2 col-md-2">Type</div>
+                                                                                <div class="col-sm-2 col-md-2">Fee</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__content">
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="drawal-monthly" class="tab-pane fade">
+                                                                    <div class="drawal--history__box">
+                                                                        <div class="box__title">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-4 col-md-4">Date</div>
+                                                                                <div class="col-sm-2 col-md-2">Amount</div>
+                                                                                <div class="col-sm-2 col-md-2">Balance</div>
+                                                                                <div class="col-sm-2 col-md-2">Type</div>
+                                                                                <div class="col-sm-2 col-md-2">Fee</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__content">
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div id="deposit-history" class="active">
                                                 <div class="tab-content">Deposit history</div>
                                             </div>
                                             <div id="ongoing-tr" class="active">
-                                                <div class="tab-content">Ongoing transcription</div>
+                                                <div class="tab-content__seperator"></div>
+                                                <div class="tab-content">
+                                                    <p><span class="menu-title">Ongoing transcription</span></p>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="stats-page pull-left">
+                                                        <div class="container pull-left drawal--history">
+                                                            <ul class="nav nav-pills">
+                                                                <li class="active"><a data-toggle="pill" href="#ongoing-daily"  class="lnk-active">Daily</a></li>
+                                                                <li><a data-toggle="pill" href="#ongoing-monthly" class="lnk-inactive">Monthly</a></li>
+                                                            </ul>
+
+                                                            <div class="tab-content">
+                                                                <div id="ongoing-daily" class="tab-pane fade in active">
+                                                                    <div class="drawal--history__box">
+                                                                        <div class="box__title">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-4 col-md-4">Date</div>
+                                                                                <div class="col-sm-2 col-md-2">Amount</div>
+                                                                                <div class="col-sm-2 col-md-2">Balance</div>
+                                                                                <div class="col-sm-2 col-md-2">Type</div>
+                                                                                <div class="col-sm-2 col-md-2">Fee</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__content">
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-11-13</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.00666000</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="ongoing-monthly" class="tab-pane fade">
+                                                                    <div class="drawal--history__box">
+                                                                        <div class="box__title">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-4 col-md-4">Date</div>
+                                                                                <div class="col-sm-2 col-md-2">Amount</div>
+                                                                                <div class="col-sm-2 col-md-2">Balance</div>
+                                                                                <div class="col-sm-2 col-md-2">Type</div>
+                                                                                <div class="col-sm-2 col-md-2">Fee</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__content">
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                            <div class="row row-drawal-history">
+                                                                                <div class="col-sm-4 col-md-4">2017-12-09</div>
+                                                                                <div class="col-sm-2 col-md-2">0.19666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.31666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.25666000</div>
+                                                                                <div class="col-sm-2 col-md-2">0.89666000</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- //Funds -->
+                                <!-- History page -->
                                 <div id="history" class="tabdiv">
                                     <div class="tab-content">
                                         <p><span class="menu-title">History page</span></p>
                                     </div>
                                 </div>
+                                <!-- //History -->
+                                <!-- Ticket page -->
                                 <div id="ticket" class="tabdiv">
                                     <div class="tab-content">
                                         <p><span class="menu-title">Tickets</span></p>
                                     </div>
                                 </div>
+                                <!-- //Ticket -->
+                                <!-- Affiliate page -->
                                 <div id="affiliate" class="tabdiv">
                                     <div class="tab-content__seperator"></div>
                                     <div class="tab-content">
@@ -1004,26 +1556,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
-                                                        <!--
-                                                        <div id="sub-tabs" class="pull-left">
-                                                            <a href="#daily" class="lnk-active">daily</a><a href="#monthly" class="lnk-inactive">monthly</a>
-                                                        </div>
-                                                        <div class="sub-tab pull-left">
-                                                            <div id="daily" class="active">
-                                                                <div class="row">
-                                                                    <div class="col-xs-12 col-md-6">Data Range</div>
-                                                                    <div class="col-xs-12 col-md-1">Visits</div>
-                                                                    <div class="col-xs-12 col-md-1">Registration</div>
-                                                                    <div class="col-xs-12 col-md-1">Deposit</div>
-                                                                    <div class="col-xs-12 col-md-1">Orders</div>
-                                                                    <div class="col-xs-12 col-md-1">Fees ($)</div>
-                                                                    <div class="col-xs-12 col-md-1">Bonus ($)</div>
-                                                                </div>
-                                                            </div>
-                                                            <div id="monthly"><p>Monthly</p></div>
-                                                        </div>
-                                                        -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -1031,6 +1563,7 @@
                                         <!-- end sub-menu -->
                                     </div>
                                 </div>
+                                <!-- //Affiliate -->
                             </div>
                             <!-- //-->
                         </div>
@@ -1071,6 +1604,23 @@
         </div>
     </div>
 </footer>
+<div id="myModal-tfa" role="dialog" class="modal fade popup__logout">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="modal-title-sec popup__logout-title">Withdraw fee is 0.2% from total amount</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer popup__links">
+                <a href="#" class="cancel" data-dismiss="modal">cancel</a>
+                <a href="#continue" class="signin">confirm</a>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- build:js js/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
