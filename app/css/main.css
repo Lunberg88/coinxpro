@@ -20,6 +20,24 @@ main {
   .navbar-default .header-buttons .active, .navbar-default .header-buttons .active:hover, .navbar-default .header-buttons .default, .navbar-default .header-buttons .default:hover {
     margin: 0 15px 10px !important; } }
 
+@media (max-width: 1260px) {
+  .tfa-dis .rp-info_text .bot_text {
+    width: 70%; }
+  .my-acc-resetpass .tabdiv li {
+    margin-left: 0 !important; }
+  .tfa-dis .rp-info_text {
+    padding-left: 25px !important;
+    line-height: 18px !important; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td button.balance-btn-drwl {
+    padding: 6px 11px !important; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > tbody td button.balance-btn-stu {
+    padding: 6px !important; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a,
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:active,
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:visited,
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:link {
+    padding: 6px 14px !important; } }
+
 .header .navbar-default {
   background: #fff !important;
   border-bottom: 0 !important; }
@@ -594,10 +612,20 @@ main {
         background: #f4f4f4;
         padding: 15px 20px;
         color: #3c3c3c; }
+        .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .banner--textarea .html-form {
+          position: absolute;
+          width: 94.5%; }
         .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .copy-buttons {
           width: 100%;
           margin: 10px auto 10px;
           padding: 0; }
+          .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .copy-buttons .nav-pills {
+            border: 0;
+            margin: 0;
+            padding: 0; }
+          .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .copy-buttons li {
+            margin: 0;
+            width: 50%; }
         .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right .copy-buttons > div {
           width: 50%; }
         .my-acc-resetpass .widget .tabdiv .tab-content .widget .active div.tab-content div.banner-box .banner-box_right label {

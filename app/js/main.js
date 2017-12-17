@@ -64,4 +64,10 @@ $(function() {
             document.execCommand('copy');
         })
     });
+
+    //
+    $('a:contains("copy")').click(function() {
+       var mess = $('textarea').val();
+        alert(mess);
+    });
 });
