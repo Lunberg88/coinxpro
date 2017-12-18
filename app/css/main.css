@@ -2266,3 +2266,280 @@ main {
   background: #2baec8;
   border: 1px solid #2baec8;
   text-decoration: none; }
+
+@media (max-width: 1025px) {
+  .section--news .header--news--box .news__body .news__marquee {
+    width: 90% !important; } }
+
+.section--header {
+  background-color: #00748E; }
+
+.header--bg1 {
+  background: url("../assets/img/header-bg-graph1.svg") no-repeat;
+  background-position-y: 12%;
+  background-color: #00748E;
+  height: auto; }
+
+.section--header .header--bg2 {
+  background: url("../assets/img/header-bg2.svg") no-repeat; }
+
+.section--header .logo__bar, .section--header .menu__nav {
+  padding: 15px 0; }
+
+.section--header .menu__nav {
+  padding: 20px 0; }
+
+.section--header .menu__nav .signin-lnk {
+  margin-right: 4px;
+  background: transparent;
+  color: #fff;
+  padding: 6px 35px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: capitalize; }
+  .section--header .menu__nav .signin-lnk:hover {
+    text-decoration: none; }
+
+.section--header .menu__nav .signup-lnk {
+  background: #fff;
+  color: #00748E;
+  padding: 6px 35px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: capitalize; }
+  .section--header .menu__nav .signup-lnk:hover {
+    text-decoration: none; }
+
+.section--header .menu__nav .select-lng {
+  color: #fff !important;
+  padding-left: 7px;
+  padding-top: 0;
+  text-decoration: none; }
+  .section--header .menu__nav .select-lng:hover {
+    text-decoration: none; }
+
+.section--header .menu__nav .caret-select {
+  margin-left: 4px;
+  border-top: 6px dashed;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent; }
+
+.section--header .left--header--section {
+  text-align: center; }
+
+.section--header .left--header--section .slider__logo p, .section--header .left--header--section .slider__text p {
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize; }
+
+.section--header .left--header--section .slider__text {
+  padding: 50px 0 0; }
+
+.section--header .left--header--section .slider__text p {
+  font-weight: 600;
+  padding-top: 0;
+  margin-bottom: 0;
+  font-size: 18px; }
+
+.section--header .left--header--section .slider__mobile-stores {
+  padding: 30px 0; }
+
+.section--header .left--header--section .slider__mobile-stores img:first-child {
+  padding-right: 10px; }
+
+.section--news {
+  background: #1E8EA8;
+  padding: 15px 0 10px; }
+
+.section--news .header--news--box {
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize; }
+
+.section--news .header--news--box .news__title {
+  font-weight: 600;
+  padding-right: 5px; }
+
+.section--news .header--news--box .news__body .news--links {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 15px 6px 0; }
+  .section--news .header--news--box .news__body .news--links:hover {
+    text-decoration: underline; }
+
+.section--currency {
+  background: #f3f3f3;
+  padding: 40px 0; }
+
+.section--currency .currency--container {
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 3px; }
+
+.section--currency .currency--container .currency__head {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 10px 15px; }
+
+.section--currency .currency--container .currency__head li {
+  display: inline-block; }
+
+.section--currency .currency--container .currency__price {
+  padding: 10px 15px; }
+
+.section--currency .currency--link__btn {
+  text-align: center;
+  padding: 30px 0 20px; }
+
+.section--currency .currency--link__btn .link__btn {
+  border: 1px solid #3b3b3b;
+  background: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px; }
+  .section--currency .currency--link__btn .link__btn:hover {
+    text-decoration: none; }
+
+.section--benefits {
+  background: #029EC1;
+  padding: 10px 0 50px; }
+
+.section--benefits .benefits--title {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 28px; }
+
+.section--benefits .benefits--title .benefits__h3 {
+  font-size: 28px; }
+
+.section--benefits .benefits--list--top, .section--benefits .benefits--list--bottom {
+  list-style: none;
+  color: #fff;
+  padding: 30px 0 10px; }
+
+.section--benefits .benefits--list--top li, .section--benefits .benefits--list--bottom li {
+  position: relative;
+  display: inline-block; }
+
+.section--benefits .benefits--list--top li > div, .section--benefits .benefits--list--bottom li > div {
+  padding-left: 80px; }
+
+.section--benefits .benefits--list--top li:before {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute; }
+
+.section--benefits .benefits--list--top li:after {
+  content: " ";
+  margin-right: 20px; }
+
+.section--benefits .benefits--list--top li:nth-child(1):before {
+  background: url("../assets/img/balance-benefits-ico.svg") no-repeat; }
+
+.section--benefits .benefits--list--top li:nth-child(2):before {
+  background: url("../assets/img/money-benefits-ico.svg") no-repeat; }
+
+.section--benefits .benefits--list--top li:nth-child(3):before {
+  background: url("../assets/img/db-benefits-ico.svg") no-repeat; }
+
+.section--benefits .benefits--list--bottom li:before {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute; }
+
+.section--benefits .benefits--list--bottom li:after {
+  content: " ";
+  margin-right: 20px; }
+
+.section--benefits .benefits--list--bottom li:nth-child(1):before {
+  background: url("../assets/img/cart-benefits-ico.svg") no-repeat; }
+
+.section--benefits .benefits--list--bottom li:nth-child(2):before {
+  background: url("../assets/img/diagram-benefits-ico.svg") no-repeat; }
+
+.section--benefits .benefits--list--bottom li:nth-child(3):before {
+  background: url("../assets/img/wallet-benefits-ico.svg") no-repeat; }
+
+.section--benefits .benefits--list--top .list__title,
+.section--benefits .benefits--list--bottom .list__title {
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.section--benefits .benefits--list--top .list__body,
+.section--benefits .benefits--list--bottom .list__body {
+  padding-top: 20px; }
+
+.section--legend {
+  background: #f3f3f3;
+  padding: 50px 0; }
+
+.section--legend .legend--box {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+.section--footer--links {
+  background: #232B34;
+  padding: 30px 0; }
+
+.section--footer--links .footer__links__box {
+  text-align: center; }
+
+.section--footer--links .footer__links__box .footer__lnk {
+  font-size: 16px;
+  color: #fff;
+  padding: 4px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .section--footer--links .footer__links__box .footer__lnk:hover {
+    color: #f3f3f3;
+    text-decoration: underline; }
+
+.footer--main {
+  background: #1D232B;
+  padding: 30px 0 35px;
+  text-align: center; }
+
+.footer--main .footer__social {
+  text-align: center; }
+
+.footer--main .footer__social .social__box {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background: rgba(128, 145, 167, 0.380392);
+  border-radius: 50%;
+  margin-right: 8px; }
+
+.footer--main .footer__social .social__box i {
+  color: #fff; }
+
+.footer--main .footer__copyrights {
+  padding-top: 15px;
+  color: #8091A7;
+  text-transform: uppercase;
+  font-size: 13px; }
