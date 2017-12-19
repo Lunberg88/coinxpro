@@ -36,7 +36,9 @@ main {
   .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:active,
   .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:visited,
   .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:link {
-    padding: 6px 14px !important; } }
+    padding: 6px 14px !important; }
+  .section--header .slider--container .coin--slider .coin--slider--inner {
+    width: 100% !important; } }
 
 .header .navbar-default {
   background: #fff !important;
@@ -758,8 +760,8 @@ main {
     vertical-align: middle; }
   .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-left {
     text-align: left;
-    padding-top: 5px;
-    font-size: 16px;
+    padding-top: 10px;
+    font-size: 14px;
     color: #3b3b3b;
     font-family: "Open Sans", sans-serif;
     font-weight: 400; }
@@ -805,7 +807,8 @@ main {
     font-weight: 600; }
   .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content {
     padding-right: 15px;
-    position: relative; }
+    position: relative;
+    margin-top: 10px; }
   .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table {
     height: 660px; }
   .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content table > thead {
@@ -867,6 +870,9 @@ main {
     font-weight: 400;
     text-align: center;
     line-height: 25px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--title .title--desc {
+    display: block;
+    padding-top: 30px; }
   .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body {
     padding: 35px 50px 15px;
     text-align: left; }
@@ -959,8 +965,9 @@ main {
   .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--tooltips {
     font-size: 14px;
     color: #5e5e5e;
-    padding-top: 55px;
-    text-align: left; }
+    padding-top: 65px;
+    text-align: left;
+    padding-bottom: 20px; }
     .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--tooltips img {
       width: 15px;
       padding: 0 2px 2px; }
@@ -2271,13 +2278,31 @@ main {
   .section--news .header--news--box .news__body .news__marquee {
     width: 90% !important; } }
 
+@media (max-width: 1259px) {
+  .section--header .left--header--section .slider__text {
+    background: #00748e;
+    margin: 20px -5px 0;
+    padding: 0 !important; }
+  .section--header .left--header--section .slider__text p {
+    font-size: 16px !important; }
+  .section--header .slider--container .coin--slider .coin--slider--indicators {
+    left: 45% !important; } }
+
+@media (max-width: 770px) {
+  .section--header .slider--container .coin--slider {
+    background-size: contain !important; }
+  .section--header .slider--container .coin--slider .coin--slider--indicators {
+    left: 46% !important;
+    bottom: 36% !important; }
+  .section--header .slider--container .coin--slider .coin--slider--inner {
+    width: 96% !important;
+    top: -2.5%; } }
+
 .section--header {
   background-color: #00748E; }
 
 .header--bg1 {
-  background: url("../assets/img/header-bg-graph1.svg") no-repeat;
-  background-position-y: 12%;
-  background-color: #00748E;
+  background: url("../assets/img/coinhitex-main-bg1.svg") no-repeat;
   height: auto; }
 
 .section--header .header--bg2 {
@@ -2327,7 +2352,8 @@ main {
   border-left: 6px solid transparent; }
 
 .section--header .left--header--section {
-  text-align: center; }
+  text-align: center;
+  padding-top: 80px; }
 
 .section--header .left--header--section .slider__logo p, .section--header .left--header--section .slider__text p {
   padding-top: 20px;
@@ -2338,7 +2364,7 @@ main {
   text-transform: capitalize; }
 
 .section--header .left--header--section .slider__text {
-  padding: 50px 0 0; }
+  padding: 100px 0 0; }
 
 .section--header .left--header--section .slider__text p {
   font-weight: 600;
@@ -2351,6 +2377,29 @@ main {
 
 .section--header .left--header--section .slider__mobile-stores img:first-child {
   padding-right: 10px; }
+
+.section--header .slider--container {
+  z-index: 9999 !important; }
+  .section--header .slider--container .coin--slider {
+    margin-top: 30px;
+    background: url("../assets/img/slider__border.png") no-repeat;
+    height: 500px; }
+  .section--header .slider--container .coin--slider .coin--slider--indicators {
+    position: absolute;
+    bottom: 17%;
+    left: 38%;
+    text-align: center; }
+  .section--header .slider--container .coin--slider .coin--slider--inner {
+    padding-top: 28px;
+    width: 80%; }
+  .section--header .slider--container .coin--slider .coin--slider--inner .coin__item {
+    left: 3.2%;
+    top: 10%; }
+  .section--header .slider--container .coin--slider .coin--slider--prev {
+    background-image: none;
+    left: -18%; }
+  .section--header .slider--container .coin--slider .coin--slider--next {
+    background-image: none; }
 
 .section--news {
   background: #1E8EA8;
@@ -2388,6 +2437,22 @@ main {
   margin-bottom: 0;
   padding: 10px 15px; }
 
+.section--currency .currency--container .currency__head img {
+  margin-right: 10px; }
+
+.section--currency .currency--container .currency__head li:last-child {
+  font-size: 13px; }
+
+.section--currency .currency--container .currency__head .currency__coins__img {
+  width: 30px; }
+
+.section--currency .currency--container .currency__head .currency__change__img {
+  width: 20px;
+  transform: rotate(90deg); }
+
+.section--currency .currency--container .currency__head .currency__rate__img {
+  width: 15px; }
+
 .section--currency .currency--container .currency__head li {
   display: inline-block; }
 
@@ -2398,9 +2463,13 @@ main {
   padding: 10px 15px; }
 
 .section--currency .currency--container .currency__chart {
-  min-height: 90px;
   position: relative;
-  bottom: 0; }
+  min-height: 90px; }
+
+.section--currency .currency--container .currency__chart img {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
 .section--currency .currency--link__btn {
   text-align: center;

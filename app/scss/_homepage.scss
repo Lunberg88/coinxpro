@@ -3,16 +3,40 @@
     width: 90% !important;
   }
 }
+@media (max-width: 1259px) {
+  .section--header .left--header--section .slider__text {
+    background: #00748e;
+    margin: 20px -5px 0;
+    padding: 0 !important;
+  }
+  .section--header .left--header--section .slider__text p {
+    font-size: 16px !important;
+  }
+
+  .section--header .slider--container .coin--slider .coin--slider--indicators {
+    left: 45% !important;
+  }
+}
+@media (max-width: 770px) {
+  .section--header .slider--container .coin--slider {
+    background-size: contain !important;
+  }
+  .section--header .slider--container .coin--slider .coin--slider--indicators {
+    left: 46% !important;
+    bottom: 36% !important;
+  }
+  .section--header .slider--container .coin--slider .coin--slider--inner {
+    width: 96% !important;
+    top: -2.5%;
+  }
+}
 ///////// Header section /////////
 .section--header {
   background-color: #00748E;
 }
 
 .header--bg1 {
-  //background: url('../assets/img/header-bg1.svg') no-repeat;
-  background: url('../assets/img/header-bg-graph1.svg') no-repeat;
-  background-position-y: 12%;
-  background-color: #00748E;
+  background: url('../assets/img/coinhitex-main-bg1.svg') no-repeat;
   height: auto;
 }
 
@@ -74,6 +98,7 @@
 
 .section--header .left--header--section {
   text-align: center;
+  padding-top: 80px;
 }
 
 .section--header .left--header--section .slider__logo {
@@ -90,7 +115,7 @@
 }
 
 .section--header .left--header--section .slider__text {
-  padding: 50px 0 0;
+  padding: 100px 0 0;
 }
 
 .section--header .left--header--section .slider__text p {
@@ -106,6 +131,37 @@
 
 .section--header .left--header--section .slider__mobile-stores img:first-child {
   padding-right: 10px;
+}
+
+//Overrided slider options
+.section--header .slider--container {
+  z-index: 9999 !important;
+  .coin--slider {
+    margin-top: 30px;
+    background: url('../assets/img/slider__border.png') no-repeat;
+    height: 500px;
+  }
+  .coin--slider .coin--slider--indicators {
+    position: absolute;
+    bottom: 17%;
+    left: 38%;
+    text-align: center;
+  }
+  .coin--slider .coin--slider--inner {
+    padding-top: 28px;
+    width: 80%;
+  }
+  .coin--slider .coin--slider--inner .coin__item {
+    left: 3.2%;
+    top: 10%;
+  }
+  .coin--slider .coin--slider--prev {
+    background-image: none;
+    left: -18%;
+  }
+  .coin--slider .coin--slider--next {
+    background-image: none;
+  }
 }
 
 ///////// Section news /////////
@@ -146,13 +202,33 @@
   margin-bottom: 30px;
   background: #fff;
   border-radius: 3px;
-  //padding: 10px 15px;
 }
 
 .section--currency .currency--container .currency__head {
   list-style: none;
   margin-bottom: 0;
   padding: 10px 15px;
+}
+
+.section--currency .currency--container .currency__head img {
+  margin-right: 10px;
+}
+
+.section--currency .currency--container .currency__head li:last-child {
+  font-size: 13px;
+}
+
+.section--currency .currency--container .currency__head .currency__coins__img {
+  width: 30px;
+}
+
+.section--currency .currency--container .currency__head .currency__change__img {
+  width: 20px;
+  transform: rotate(90deg);
+}
+
+.section--currency .currency--container .currency__head .currency__rate__img {
+  width: 15px;
 }
 
 .section--currency .currency--container .currency__head li {
@@ -168,10 +244,14 @@
 }
 
 .section--currency .currency--container .currency__chart {
-  min-height: 90px;
-  //object-fit: cover;
   position: relative;
+  min-height: 90px;
+}
+
+.section--currency .currency--container .currency__chart img {
+  position: absolute;
   bottom: 0;
+  left: 0;
 }
 
 .section--currency .currency--link__btn {

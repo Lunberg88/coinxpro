@@ -55,6 +55,12 @@ main {
   .my-acc-resetpass .widget div.tab-content .balances--main__box .balances--header .balances--header-right a:link {
     padding: 6px 14px !important;
   }
+  .section--header .slider--container .coin--slider .coin--slider--inner {
+    width: 100% !important;
+  }
+  .section--header .slider--container .coin--slider {
+    //height: 340px !important;
+  }
 }
 
 @import "vars";
