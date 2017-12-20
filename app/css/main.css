@@ -44,7 +44,8 @@ main {
   background: #fff !important;
   border-bottom: 0 !important; }
   .header .navbar-default .navbar-header, .header .navbar-default .img-logo {
-    font-family: "Open Sans", sans-serif !important; }
+    font-family: "Open Sans", sans-serif !important;
+    height: 65px; }
 
 .navbar-default .navbar-header, .navbar-default .img-logo {
   font-family: Verdana, "Open Sans", sans-serif !important; }
@@ -862,6 +863,13 @@ main {
     font-weight: 400; }
   .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--top {
     position: relative; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .stu--frame .deposit--body,
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .stu--frame .deposit--body .withdrawal--window {
+    padding-top: 0 !important; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .stu--frame .deposit--body .withdrawal--window .drwl-row:nth-child(2) {
+    padding-top: 25px; }
+  .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .stu--frame .deposit--body .withdrawal--window .drwl-row:nth-child(3) {
+    padding-top: 45px; }
   .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--title {
     padding-top: 30px;
     font-size: 14px;
@@ -933,6 +941,19 @@ main {
     .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .withdrawal--window .drwl-addon {
       border-radius: 0 3px 3px 0;
       cursor: pointer; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .withdrawal--window .stu-frame {
+      border-left: 0;
+      word-spacing: 10px;
+      padding: 6px 22px; }
+      .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .withdrawal--window .stu-frame select {
+        border: 0;
+        background: transparent;
+        outline: none;
+        cursor: pointer; }
+    .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .withdrawal--window .stu-frame-ddm {
+      min-width: 95px;
+      width: 95px;
+      padding: 5px 0 5px 20px; }
     .my-acc-resetpass .widget div.tab-content .balances--main__box .market-main-content .deposit--window--box .deposit--body .withdrawal--window .drwl-form-label {
       font-size: 16px;
       font-family: "Open Sans", sans-serif;
@@ -1496,6 +1517,23 @@ main {
     .tfa .rp-banner span {
       font-size: 52px !important;
       line-height: 600px !important; }
+
+@media (max-width: 770px) {
+  .news-content .main-news-box, .dice-content .main-news-box {
+    margin: auto !important; }
+  .news-content .news-content-right .news-search-box,
+  .news-content .news-content-right .select-form-curr {
+    width: 85%; }
+  .news-content .markets-show table tbody,
+  .dice-content .markets-show table tbody {
+    width: 220px; }
+  .news-content .news-page-banners .rp-banner,
+  .dice-content .news-page-banners .rp-banner {
+    width: 100% !important;
+    height: auto !important; }
+  .news-content .markets-show table tbody td {
+    padding: 4px;
+    font-size: 10px; } }
 
 .news-content, .dice-content {
   margin: auto auto 40px; }
@@ -2290,7 +2328,9 @@ main {
 
 @media (max-width: 770px) {
   .section--header .slider--container .coin--slider {
-    background-size: contain !important; }
+    background-size: contain !important;
+    margin-bottom: -100px !important;
+    z-index: 9999 !important; }
   .section--header .slider--container .coin--slider .coin--slider--indicators {
     left: 46% !important;
     bottom: 36% !important; }
@@ -2302,8 +2342,10 @@ main {
   background-color: #00748E; }
 
 .header--bg1 {
-  background: url("../assets/img/coinhitex-main-bg1.svg") no-repeat;
-  height: auto; }
+  background: url("../assets/img/main__bg_last.png") no-repeat;
+  height: auto;
+  background-position-y: 41%;
+  background-color: #00748E; }
 
 .section--header .header--bg2 {
   background: url("../assets/img/header-bg2.svg") no-repeat; }
@@ -2383,7 +2425,8 @@ main {
   .section--header .slider--container .coin--slider {
     margin-top: 30px;
     background: url("../assets/img/slider__border.png") no-repeat;
-    height: 500px; }
+    height: 500px;
+    margin-bottom: 30px; }
   .section--header .slider--container .coin--slider .coin--slider--indicators {
     position: absolute;
     bottom: 17%;

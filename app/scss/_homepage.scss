@@ -20,6 +20,8 @@
 @media (max-width: 770px) {
   .section--header .slider--container .coin--slider {
     background-size: contain !important;
+    margin-bottom: -100px !important;
+    z-index: 9999 !important;
   }
   .section--header .slider--container .coin--slider .coin--slider--indicators {
     left: 46% !important;
@@ -36,8 +38,11 @@
 }
 
 .header--bg1 {
-  background: url('../assets/img/coinhitex-main-bg1.svg') no-repeat;
+  //background: url('../assets/img/coinhitex-main-bg1.svg') no-repeat;
+  background: url('../assets/img/main__bg_last.png') no-repeat;
   height: auto;
+  background-position-y: 41%;
+  background-color: #00748E;
 }
 
 .section--header .header--bg2 {
@@ -140,6 +145,7 @@
     margin-top: 30px;
     background: url('../assets/img/slider__border.png') no-repeat;
     height: 500px;
+    margin-bottom: 30px;
   }
   .coin--slider .coin--slider--indicators {
     position: absolute;

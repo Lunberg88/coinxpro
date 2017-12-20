@@ -1,3 +1,30 @@
+@media (max-width: 770px) {
+  .news-content .main-news-box, .dice-content .main-news-box {
+    margin: auto !important;
+  }
+
+  .news-content .news-content-right .news-search-box,
+  .news-content .news-content-right .select-form-curr {
+    width: 85%;
+  }
+
+  .news-content .markets-show table tbody,
+  .dice-content .markets-show table tbody {
+    width: 220px;
+  }
+
+  .news-content .news-page-banners .rp-banner,
+  .dice-content .news-page-banners .rp-banner {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .news-content .markets-show table tbody td {
+    padding: 4px;
+    font-size: 10px;
+  }
+}
+
 .news-content, .dice-content {
   margin: auto auto 40px;
 
